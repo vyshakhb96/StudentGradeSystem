@@ -1,0 +1,6 @@
+﻿body {
+    background-color:aqua;
+    background-image: url('../Images/bg3.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+}
