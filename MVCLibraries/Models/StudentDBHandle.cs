@@ -31,13 +31,14 @@ namespace MVCLibraries
             }
         }
 
-        public bool AddStudent(StudentModel smodel)
+        public bool AddStudent(Student smodel)
         {
             try { 
             connection();
-            SqlCommand cmd = new SqlCommand("AddNewStudent", con);
+            SqlCommand cmd = new SqlCommand("AddOrUpdate", con);
             cmd.CommandType = CommandType.StoredProcedure;
-
+            
+            cmd.Parameters.AddWithValue("@StdId", smodel.Id);
             cmd.Parameters.AddWithValue("@Regnum", smodel.Regnum);
             cmd.Parameters.AddWithValue("@Name", smodel.Name);
             cmd.Parameters.AddWithValue("@Dob", smodel.Dob);
@@ -47,6 +48,7 @@ namespace MVCLibraries
             cmd.Parameters.AddWithValue("@Chemistry", smodel.Chemistry);
             cmd.Parameters.AddWithValue("@Grade", smodel.Grade);
             cmd.Parameters.AddWithValue("@Active", 1);
+            cmd.Parameters.AddWithValue("@Reqtype", smodel.Reqtype);
 
             OpenConnection();
             int i = cmd.ExecuteNonQuery();
@@ -57,8 +59,9 @@ namespace MVCLibraries
             else
                 return false;
             }
-            catch(Exception)
+            catch(Exception ex)
             {
+                string excep = ex.Message;
                 return false;
             }
             finally
@@ -67,10 +70,10 @@ namespace MVCLibraries
             }
         }
 
-        public StudentModel GetStudentByReg(string regnum)
+        public Student GetStudentByReg(string regnum)
         {
             connection();
-            StudentModel student = new StudentModel();
+            Student student = new Student();
 
             SqlCommand cmd = new SqlCommand("StudentGetByReg", con);
             cmd.CommandType = CommandType.StoredProcedure;
@@ -80,25 +83,31 @@ namespace MVCLibraries
 
             OpenConnection();
             sd.Fill(dt);
-            CloseConnection();
-
-            student.Id = Convert.ToInt32(dt.Rows[0]["Id"]);
-            student.Regnum = Convert.ToString(dt.Rows[0]["Regnum"]);
-            student.Name = Convert.ToString(dt.Rows[0]["Name"]);
-            student.Dob = Convert.ToString(dt.Rows[0]["Dob"]);
-            student.Standard = Convert.ToString(dt.Rows[0]["Standard"]);
-            student.Mathematics = Convert.ToInt32(dt.Rows[0]["Mathematics"]);
-            student.Physics = Convert.ToInt32(dt.Rows[0]["Physics"]);
-            student.Chemistry = Convert.ToInt32(dt.Rows[0]["Chemistry"]);
-            student.Grade = Convert.ToString(dt.Rows[0]["Grade"]);
-
+            if (dt.Rows.Count > 0)
+            {
+                student.Id = Convert.ToInt32(dt.Rows[0]["Id"]);
+                student.Regnum = Convert.ToString(dt.Rows[0]["Regnum"]);
+                student.Name = Convert.ToString(dt.Rows[0]["Name"]);
+                student.Dob = Convert.ToString(dt.Rows[0]["Dob"]);
+                student.Standard = Convert.ToString(dt.Rows[0]["Standard"]);
+                student.Mathematics = Convert.ToInt32(dt.Rows[0]["Mathematics"]);
+                student.Physics = Convert.ToInt32(dt.Rows[0]["Physics"]);
+                student.Chemistry = Convert.ToInt32(dt.Rows[0]["Chemistry"]);
+                student.Grade = Convert.ToString(dt.Rows[0]["Grade"]);
+                dt.Clear();
+            }
+            else
+            {
+                return null;
+            }
             return student;
+            CloseConnection();
         }
 
-        public StudentModel GetStudentById(int Id)
+        public Student GetStudentById(int Id)
         {
             connection();
-            StudentModel student = new StudentModel();
+            Student student = new Student();
 
             SqlCommand cmd = new SqlCommand("StudentGetById", con);
             cmd.CommandType = CommandType.StoredProcedure;
@@ -122,10 +131,10 @@ namespace MVCLibraries
 
             return student;
         }
-        public List<StudentModel> GetStudent(int offsetValue, int PagingSize, string search)
+        public List<Student> GetStudent(int offsetValue, int PagingSize, string search)
         {
             connection();
-            List<StudentModel> studentlist = new List<StudentModel>();
+            List<Student> studentlist = new List<Student>();
 
             SqlCommand cmd = new SqlCommand("StudentGetPagination", con);
             cmd.CommandType = CommandType.StoredProcedure;
@@ -142,7 +151,7 @@ namespace MVCLibraries
             foreach (DataRow dr in dt.Rows)
             {
                 studentlist.Add(
-                    new StudentModel
+                    new Student
                     {
                         Id = Convert.ToInt32(dr["Id"]),
                         Regnum= Convert.ToString(dr["Regnum"]),
@@ -160,12 +169,12 @@ namespace MVCLibraries
         }
 
 
-        public string UpdateDetails(StudentModel smodel)
+        public string UpdateDetails(Student smodel)
         {
             try
             {
                 connection();
-                SqlCommand cmd = new SqlCommand("UpdateStudentDetails", con);
+                SqlCommand cmd = new SqlCommand("AddOrUpdate", con);
                 cmd.CommandType = CommandType.StoredProcedure;
 
                 cmd.Parameters.AddWithValue("@StdId", smodel.Id);
@@ -178,6 +187,7 @@ namespace MVCLibraries
                 cmd.Parameters.AddWithValue("@Chemistry", smodel.Chemistry);
                 cmd.Parameters.AddWithValue("@Grade", smodel.Grade);
                 cmd.Parameters.AddWithValue("@Active", 1);
+                cmd.Parameters.AddWithValue("@Reqtype", smodel.Reqtype);
 
                 OpenConnection();
                 int i = cmd.ExecuteNonQuery();

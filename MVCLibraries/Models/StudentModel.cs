@@ -1,8 +1,11 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using MVCLibraries.Enum;
+using System.ComponentModel.DataAnnotations;
 
 namespace MVCLibraries
 {
-    public class StudentModel
+    
+    //student
+    public class Student
     {
         [Display(Name = "Id")]
         public int Id { get; set; }
@@ -14,7 +17,7 @@ namespace MVCLibraries
         [RegularExpression("[a-zA-Z]{3,15}", ErrorMessage = "Enter proper name")]
         public string Name { get; set; }
 
-        [MinimumAge(17)]
+        //[MinimumAge(17)]
         [Required(ErrorMessage = "Date of birth is required.")]
         [DisplayFormat(DataFormatString = "{0:dd/MMM/yyyy}", ApplyFormatInEditMode = true)]
         public string Dob { get; set; }
@@ -34,5 +37,11 @@ namespace MVCLibraries
         public string Grade { get; set; }
 
         public int Active { get; set; }
+
+        public string Reqtype { get; set; }
+
+        public Operations operations { get; set; }
     }
+
+    
 }

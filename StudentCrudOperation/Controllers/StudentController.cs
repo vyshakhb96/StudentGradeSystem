@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web.Mvc;
 using MVCLibraries;
 using System.Linq.Dynamic;
+using MVCLibraries.Enum;
 
 namespace StudentCrudOperation.Controllers
 {
@@ -16,12 +17,7 @@ namespace StudentCrudOperation.Controllers
             ModelState.Clear();
             return View();
         }
-
-        // GET: Student/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
+       
 
         public string GradeCalculation(int maths, int phy, int che)
         {
@@ -72,7 +68,7 @@ namespace StudentCrudOperation.Controllers
             string sortColumnName = Request["columns[" + Request["order[0][column]"] + "][name]"];
             string sortDirection = Request["order[0][dir]"];
 
-            List<StudentModel> StudentList = new List<StudentModel>();
+            List<Student> StudentList = new List<Student>();
             StudentDBHandle db = new StudentDBHandle();
 
 
@@ -93,22 +89,32 @@ namespace StudentCrudOperation.Controllers
                         x.Mathematics.ToString().Contains(searchKey.ToLower()) || 
                         x.Physics.ToString().Contains(searchKey.ToLower()) || 
                         x.Chemistry.ToString().Contains(searchKey.ToLower()) || 
-                        x.Grade.ToLower().Contains(searchKey.ToLower())).ToList<StudentModel>();
+                        x.Grade.ToLower().Contains(searchKey.ToLower())).ToList<Student>();
                 }
                 int totalrowsafterfiltering = StudentList.Count;
                 //sorting
-                StudentList = StudentList.OrderBy(sortColumnName + " " + sortDirection).ToList<StudentModel>();
+                StudentList = StudentList.OrderBy(sortColumnName + " " + sortDirection).ToList<Student>();
                 //paging
-                StudentList = StudentList.Skip(startNumber).Take(length).ToList<StudentModel>();
+                StudentList = StudentList.Skip(startNumber).Take(length).ToList<Student>();
 
                 return Json(new { data = StudentList, draw = Request["draw"], recordsTotal = totalrows, recordsFiltered = totalrowsafterfiltering }, JsonRequestBehavior.AllowGet);
             
         }
 
+        // GET: Student/Create
+        [HttpGet]
+        public ActionResult Create()
+        {
+            Student sm = new Student();
+            sm.operations = Operations.Add;
+            ViewBag.operation = sm.operations;
+            ViewData["Standard"] = "";
+            return PartialView("_StudentEditPartial", sm);
+        }
 
         // POST: Student/Create
         [HttpPost]
-        public ActionResult Create(StudentModel smodel)
+        public ActionResult Create(Student smodel)
         {
             try
             {
@@ -137,7 +143,7 @@ namespace StudentCrudOperation.Controllers
 
                 }
 
-                return View();
+                return PartialView("_StudentPartial", smodel);
             }
             catch(Exception ex)
             {
@@ -148,7 +154,7 @@ namespace StudentCrudOperation.Controllers
 
         // GET: Student/Edit/5
         public ActionResult Edit(int id)
-        {        
+        {      
                 StudentDBHandle sdb = new StudentDBHandle();
                 int startNumber = Convert.ToInt32(Request["start"]);
                 int length = Convert.ToInt32(Request["length"]);
@@ -157,19 +163,20 @@ namespace StudentCrudOperation.Controllers
                 var dob = DateTime.Parse(stud.Dob);
                 stud.Dob = dob.ToString("dd-MM-yyyy");
                 ViewData["Standard"] = stud.Standard;
-                return View(stud);
+                return PartialView("_StudentEditPartial",stud);
     
         }
 
         // POST: Student/Edit/5
         [HttpPost]
-        public ActionResult Edit(int id, StudentModel smodel)
+        public ActionResult Edit(int id, Student smodel)
         {
             try
             {
                 smodel.Grade = GradeCalculation(smodel.Mathematics, smodel.Physics, smodel.Chemistry);
                 StudentDBHandle sdb = new StudentDBHandle();
                 sdb.UpdateDetails(smodel);
+                //return PartialView("_Edit");
                 return RedirectToAction("Index");
             }
             catch (Exception ex)
@@ -179,21 +186,56 @@ namespace StudentCrudOperation.Controllers
             }
             finally
             {
-                ViewData["FinalError"] = "Error occured!";
+                ViewData["Final"] = "Final excecuted!";
             }
         }
 
-        // GET: Student/Delete/5
+        [HandleError]
+        public ActionResult CreateOrUpdateStudent( Student smodel)
+        {
+            StudentDBHandle sdb = new StudentDBHandle();
+            if (ModelState.IsValid)
+            {
+                if (smodel.Id > 0)
+                {
+                    smodel.Grade = GradeCalculation(smodel.Mathematics, smodel.Physics, smodel.Chemistry);
+                    smodel.Reqtype = "UPDATE";
+                    sdb.UpdateDetails(smodel);
+                    return Json(true, JsonRequestBehavior.AllowGet);
+                }
+                else
+                {
+                    smodel.Grade = GradeCalculation(smodel.Mathematics, smodel.Physics, smodel.Chemistry);
+                    smodel.Reqtype = "INSERT";
+                    sdb.AddStudent(smodel);
+                    return Json(true, JsonRequestBehavior.AllowGet);
+                }
+
+            }
+            return Json(false, JsonRequestBehavior.AllowGet);
+        }
+
+        [HttpGet]
         public ActionResult Delete(int id)
+        {
+                StudentDBHandle sdb = new StudentDBHandle();
+                var stud = sdb.GetStudentById(id);
+                return PartialView("_Delete", stud);
+            
+        }
+        
+        [HttpPost]
+        public ActionResult Delete(Student smodel)
         {
             try
             {
+                int id = smodel.Id;
                 StudentDBHandle sdb = new StudentDBHandle();
                 if (sdb.DeleteStudent(id))
                 {
                     ViewBag.AlertMsg = "Student Deleted Successfully";
+                    return Json(true, JsonRequestBehavior.AllowGet);
                 }
-                return RedirectToAction("Index");
             }
             catch (Exception ex)
             {
@@ -201,7 +243,7 @@ namespace StudentCrudOperation.Controllers
             }
             finally
             {
-                ViewData["FinalError"] = "Error occured!";
+                ViewData["Final"] = "Done!";
             }
             return View();
         }

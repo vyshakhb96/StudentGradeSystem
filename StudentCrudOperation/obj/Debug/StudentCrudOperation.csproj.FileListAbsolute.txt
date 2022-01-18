@@ -123,12 +123,15 @@ G:\project-ust-05-12-2021\StudentCrudOperation\StudentCrudOperation\bin\roslyn\V
 G:\project-ust-05-12-2021\StudentCrudOperation\StudentCrudOperation\bin\roslyn\VBCSCompiler.exe.config
 G:\project-ust-05-12-2021\StudentCrudOperation\StudentCrudOperation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 G:\project-ust-05-12-2021\StudentCrudOperation\StudentCrudOperation\bin\Microsoft.Web.Infrastructure.dll
+G:\project-ust-05-12-2021\StudentCrudOperation\StudentCrudOperation\bin\MVCLibraries.dll
+G:\project-ust-05-12-2021\StudentCrudOperation\StudentCrudOperation\bin\System.Linq.Dynamic.dll
 G:\project-ust-05-12-2021\StudentCrudOperation\StudentCrudOperation\bin\System.Web.Helpers.dll
 G:\project-ust-05-12-2021\StudentCrudOperation\StudentCrudOperation\bin\System.Web.Mvc.dll
 G:\project-ust-05-12-2021\StudentCrudOperation\StudentCrudOperation\bin\System.Web.Razor.dll
 G:\project-ust-05-12-2021\StudentCrudOperation\StudentCrudOperation\bin\System.Web.Webpages.Deployment.dll
 G:\project-ust-05-12-2021\StudentCrudOperation\StudentCrudOperation\bin\System.Web.Webpages.dll
 G:\project-ust-05-12-2021\StudentCrudOperation\StudentCrudOperation\bin\System.Web.Webpages.Razor.dll
+G:\project-ust-05-12-2021\StudentCrudOperation\StudentCrudOperation\bin\MVCLibraries.pdb
 G:\project-ust-05-12-2021\StudentCrudOperation\StudentCrudOperation\bin\System.Web.Razor.xml
 G:\project-ust-05-12-2021\StudentCrudOperation\StudentCrudOperation\bin\System.Web.Webpages.xml
 G:\project-ust-05-12-2021\StudentCrudOperation\StudentCrudOperation\bin\System.Web.Webpages.Deployment.xml
@@ -141,6 +144,3 @@ G:\project-ust-05-12-2021\StudentCrudOperation\StudentCrudOperation\obj\Debug\St
 G:\project-ust-05-12-2021\StudentCrudOperation\StudentCrudOperation\obj\Debug\StudentCrudOperation.csproj.CopyComplete
 G:\project-ust-05-12-2021\StudentCrudOperation\StudentCrudOperation\obj\Debug\StudentCrudOperation.dll
 G:\project-ust-05-12-2021\StudentCrudOperation\StudentCrudOperation\obj\Debug\StudentCrudOperation.pdb
-G:\project-ust-05-12-2021\StudentCrudOperation\StudentCrudOperation\bin\MVCLibraries.dll
-G:\project-ust-05-12-2021\StudentCrudOperation\StudentCrudOperation\bin\MVCLibraries.pdb
-G:\project-ust-05-12-2021\StudentCrudOperation\StudentCrudOperation\bin\System.Linq.Dynamic.dll
