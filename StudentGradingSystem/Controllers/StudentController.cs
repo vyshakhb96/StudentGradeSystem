@@ -5,6 +5,7 @@ using System.Web.Mvc;
 using System.Linq.Dynamic;
 using StudentLibraries.Enum;
 using StudentGradingSystem.Models;
+using StudentGradingSystem.DAL;
 
 namespace StudentGradingSystem.Controllers
 {
@@ -19,13 +20,13 @@ namespace StudentGradingSystem.Controllers
             ModelState.Clear();
             return View();
         }
-       
 
-        public string GradeCalculation(int maths, int phy, int che)
+        string Grade;
+        private string GradeCalculation(int maths, int phy, int che)
         {
             float Total = maths + phy + che;
             float Average = (Total / 300) * 100;
-            string Grade;
+            
             if (Average >= 90)
             {
                 return Grade = "A+";
@@ -73,13 +74,12 @@ namespace StudentGradingSystem.Controllers
             List<Student> StudentList = new List<Student>();
             StudentDBHandle db = new StudentDBHandle();
 
-
                 StudentList = db.GetStudent(startNumber,length,searchKey);
                 int totalrows = StudentList.Count;
                 for (int i = 0; i < StudentList.Count; i++)
                 {
                     var dob = DateTime.Parse(StudentList[i].Dob);
-                StudentList[i].Dob = dob.ToString("dd-MM-yyyy");
+                    StudentList[i].Dob = dob.ToString("dd-MM-yyyy");
                 }
                 if (!string.IsNullOrEmpty(searchKey))
                 {
@@ -125,9 +125,7 @@ namespace StudentGradingSystem.Controllers
             {
                 int startNumber = Convert.ToInt32(Request["start"]);
                 int length = Convert.ToInt32(Request["length"]);
-                string searchKey = Request["search[value]"];
-                
-                ViewData["Standard"] = "";
+                string searchKey = Request["search[value]"];                
                 smodel.Grade = GradeCalculation(smodel.Mathematics, smodel.Physics, smodel.Chemistry);
                 StudentDBHandle dbhandle = new StudentDBHandle();
                 var isRegExist = dbhandle.GetStudentByReg(smodel.Regnum);

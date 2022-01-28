@@ -1,8 +1,6 @@
-﻿@model IEnumerable <StudentGradingSystem.Models.Student>
+﻿@model IEnumerable<StudentGradingSystem.Models.Student>
 <br />
-
 <p>
-    @*@Html.ActionLink("Add New Student", "Create", "Student", new { @class = "btn btn-success" })*@
     <button type="button" class="btn btn-primary" onclick="createStudent()">Create</button>
 </p>
 
@@ -24,127 +22,128 @@
 </table>
 
 
-    <div class="modal fade" id="dataModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content" id="dataModalBody">
+<div class="modal fade" id="dataModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content" id="dataModalBody">
 
 
-            </div>
         </div>
     </div>
+</div>
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <link href="//cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet" />
-    <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
-    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
-    <script>
-        var dataTable;
-        $(document).ready(function () {
-            dataTable = $('#studtable_id').DataTable({
-                "ajax": {
-                    url: "/Student/GetData",
-                    type: "POST",
-                    dataType: "json"
-                },
-                columns: [
-                    { 'data': 'Regnum', 'name': "Regnum" },
-                    { 'data': 'Name', 'name': "Name" },
-                    { 'data': 'Dob', 'name': "Dob" },
-                    { 'data': 'Standard', 'name': "Standard" },
-                    { 'data': 'Mathematics', 'name': "Mathematics" },
-                    { 'data': 'Physics', 'name': "Physics" },
-                    { 'data': 'Chemistry', 'name': "Chemistry" },
-                    { 'data': 'Grade', 'name': "Grade" },
-                    {
-                        'data': 'Id', 'render': function (data) {
-                            return '<button class="btn btn-warning" onclick="getStudent(' + data + ')" >View</button>  <button class="btn btn-danger" onclick="Delete(' + data + ')"> Delete</button>';
-                        }
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<link href="//cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet" />
+<script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+
+<script>
+    var dataTable;
+    $(document).ready(function () {
+        dataTable = $('#studtable_id').DataTable({
+            "ajax": {
+                url: "/Student/GetData",
+                type: "POST",
+                dataType: "json"
+            },
+            columns: [
+                { 'data': 'Regnum', 'name': "Regnum" },
+                { 'data': 'Name', 'name': "Name" },
+                { 'data': 'Dob', 'name': "Dob" },
+                { 'data': 'Standard', 'name': "Standard" },
+                { 'data': 'Mathematics', 'name': "Mathematics" },
+                { 'data': 'Physics', 'name': "Physics" },
+                { 'data': 'Chemistry', 'name': "Chemistry" },
+                { 'data': 'Grade', 'name': "Grade" },
+                {
+                    'data': 'Id', 'render': function (data) {
+                        return '<button class="btn btn-warning" onclick="getStudent(' + data + ')" >View</button>  <button class="btn btn-danger" onclick="Delete(' + data + ')"> Delete</button>';
                     }
-                ],
-                "serverSide": "true",
-                "order": [0, "asc"],
-                "processing": "true"
-            });
+                }
+            ],
+
+            "serverSide": "true",
+            "order": [0, "asc"],
+            "processing": "true",
+           
         });
+    });
 
 
-        function createStudent() {
-            $.get("/Student/Create", { operation:"Add"}, function (res) {
-                $('#dataModalBody').html(res);
-                $('#dataModal').modal('show');
-                document.getElementById("dob").type = "date";
-                btnEdit.style.visibility = 'hidden';
-                document.getElementById("ViewModalLabel").innerHTML = "CREATE STUDENT";
-                $("#btnSave").show();
-
-            })
-        }
-
-        function AddStudent() {
-            var modal = $("#dataModal");
-            var form = $('form[name="dataForm"]');
-            studentValidation();
-            var data = form.serialize();
-            $.post("/Student/Create", data, function (res) {
-                if (res) {
-                    modal.modal('hide');
-                    dataTable.ajax.reload();
-                }
-            })
-        }
-
-        function getStudent(id) {
-            $.get("/Student/Edit", { operation:"View", id: id }, function (res) {
-                $('#dataModalBody').html(res);
-                $('#dataModal').modal('show');
-            })
-        }
-
-        function UpdateStudent() {
-            var modal = $("#dataModal");
-            var form = $('form[name="dataForm"]');
-            studentValidation();
-            var data = form.serialize();
-            $.post("/Student/Edit", data, function (res) {
-                if (res) {
-                    modal.modal('hide');
-                    dataTable.ajax.reload();
-                }
-            })
-        }
-
-        function Delete(id) {
-            $.get("/Student/Delete", { id: id }, function (res) {
-                if (res) {
-                    $('#dataModalBody').html(res);
-                    $('#dataModal').modal('show');
-                    dataTable.ajax.reload();
-                }
-            })
-        }
-
-        function DeleteStudent() {
-            var modal = $("#dataModal");
-            var form = $('form[name="deleteForm"]');
-            var data = form.serialize();
-            $.post("/Student/Delete", data, function (res) {
-                if (res) {
-                    modal.modal('hide');
-                    dataTable.ajax.reload();
-                }
-            })
-        }
-
-        function enable() {
-            $('.form-control').attr('disabled', false);           
+    function createStudent() {
+        $.get("/Student/Create", { operation: "Add" }, function (res) {
+            $('#dataModalBody').html(res);
+            $('#dataModal').modal('show');
+            document.getElementById("dob").type = "date";
             btnEdit.style.visibility = 'hidden';
-            $("#btnUpdateSave").show();
-            document.getElementById("ViewModalLabel").innerHTML = "EDIT STUDENT";
-        }
+            document.getElementById("ViewModalLabel").innerHTML = "CREATE STUDENT";
+            $("#btnSave").show();
 
-        function studentValidation() {
+        })
+    }
+
+    function AddStudent() {
+        var modal = $("#dataModal");
+        var form = $('form[name="dataForm"]');
+        studentValidation();
+        var data = form.serialize();
+        $.post("/Student/Create", data, function (res) {
+            if (res) {
+                modal.modal('hide');
+                dataTable.ajax.reload();
+            }
+        })
+    }
+
+    function getStudent(id) {
+        $.get("/Student/Edit", { operation: "View", id: id }, function (res) {
+            $('#dataModalBody').html(res);
+            $('#dataModal').modal('show');
+        })
+    }
+
+    function UpdateStudent() {
+        var modal = $("#dataModal");
+        var form = $('form[name="dataForm"]');
+        studentValidation();
+        var data = form.serialize();
+        $.post("/Student/Edit", data, function (res) {
+            if (res) {
+                modal.modal('hide');
+                dataTable.ajax.reload();
+            }
+        })
+    }
+
+    function Delete(id) {
+        $.get("/Student/Delete", { id: id }, function (res) {
+            if (res) {
+                $('#dataModalBody').html(res);
+                $('#dataModal').modal('show');
+                dataTable.ajax.reload();
+            }
+        })
+    }
+
+    function DeleteStudent() {
+        var modal = $("#dataModal");
+        var form = $('form[name="deleteForm"]');
+        var data = form.serialize();
+        $.post("/Student/Delete", data, function (res) {
+            if (res) {
+                modal.modal('hide');
+                dataTable.ajax.reload();
+            }
+        })
+    }
+
+    function Enable() {
+        $('.form-control').attr('disabled', false);
+        btnEdit.style.visibility = 'hidden';
+        $("#btnUpdateSave").show();
+        document.getElementById("ViewModalLabel").innerHTML = "EDIT STUDENT";
+    }
+
+    function studentValidation() {
             if (document.getElementById("reg").value == "") {
                 document.getElementById("regSpan").textContent = "Register number is required";
             } else {
@@ -154,7 +153,7 @@
             var name = document.getElementById("name").value;
             if (name == "") {
                 document.getElementById("spanName").textContent = "Name is required";
-            } else if (Number.isInteger(name)) {
+            } else if (!isNaN(name)) {
                 document.getElementById("spanName").textContent = "Enter proper name";
             } else {
                 document.getElementById("spanName").textContent = "";
@@ -194,7 +193,7 @@
             } else {
                 document.getElementById("spanChemistry").textContent = "";
             }
-
+            return true;
         }
 
-    </script>
+</script>

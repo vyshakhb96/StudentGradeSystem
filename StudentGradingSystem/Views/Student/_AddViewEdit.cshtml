@@ -78,7 +78,7 @@
     </div>
     <div class="modal-footer">
 
-        <button type="button" id="btnEdit" class="btn btn-warning" onclick="enable()">Edit</button>
+        <button type="button" id="btnEdit" class="btn btn-warning" onclick="Enable()">Edit</button>
         <button type="button" id="btnSave" style="display:none" class="btn btn-primary" onclick="AddStudent()">Save</button>
         <button type="button" id="btnUpdateSave" style="display:none" class="btn btn-primary" onclick="UpdateStudent()">Save</button>
 
@@ -94,7 +94,7 @@
      $("#Standard").val(Standard);
 
         var operation = '@Model.ActionType.ToString()';
-
+        console.log(operation);
         if (operation == '@Operations.Add' || operation == '@Operations.Edit') {
             $('.form-control').attr('disabled', false);
         }
@@ -112,7 +112,6 @@
         $("#Standard").val(stud);
 
     });
-
 
 
 
