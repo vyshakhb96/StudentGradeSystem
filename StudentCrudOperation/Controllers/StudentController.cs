@@ -65,42 +65,19 @@ namespace StudentGradingSystem.Controllers
         [HttpPost]
         public ActionResult GetData()
         {
-            int startNumber = Convert.ToInt32(Request.Form["start"]);
-            int length = Convert.ToInt32(Request.Form["length"]);
-            string searchKey = Convert.ToString(Request.Form["search[value]"]);
-            string sortColumnName = Request["columns[" + Request["order[0][column]"] + "][name]"];
-            string sortDirection = Request["order[0][dir]"];
+            StudentDBHandle obj = new StudentDBHandle();
 
-            List<Student> StudentList = new List<Student>();
-            StudentDBHandle db = new StudentDBHandle();
+            var pagenumber = Convert.ToInt32(Request.Form["start"]);
+            var pagesize = Convert.ToInt32(Request.Form["length"]);
+            var search = Request.Form["search[value]"];
 
-                StudentList = db.GetStudent(startNumber,length,searchKey);
-                int totalrows = StudentList.Count;
-                for (int i = 0; i < StudentList.Count; i++)
-                {
-                    var dob = DateTime.Parse(StudentList[i].Dob);
-                    StudentList[i].Dob = dob.ToString("dd-MM-yyyy");
-                }
-                if (!string.IsNullOrEmpty(searchKey))
-                {
-                    StudentList = StudentList.
-                        Where(x => x.Name.ToLower().Contains(searchKey.ToLower()) || 
-                        x.Regnum.ToLower().Contains(searchKey.ToLower()) || 
-                        x.Dob.Contains(searchKey) || 
-                        x.Standard.ToString().Contains(searchKey.ToLower()) || 
-                        x.Mathematics.ToString().Contains(searchKey.ToLower()) || 
-                        x.Physics.ToString().Contains(searchKey.ToLower()) || 
-                        x.Chemistry.ToString().Contains(searchKey.ToLower()) || 
-                        x.Grade.ToLower().Contains(searchKey.ToLower())).ToList<Student>();
-                }
-                int totalrowsafterfiltering = StudentList.Count;
-                //sorting
-                StudentList = StudentList.OrderBy(sortColumnName + " " + sortDirection).ToList<Student>();
-                //paging
-                StudentList = StudentList.Skip(startNumber).Take(length).ToList<Student>();
-
-                return Json(new { data = StudentList, draw = Request["draw"], recordsTotal = totalrows, recordsFiltered = totalrowsafterfiltering }, JsonRequestBehavior.AllowGet);
-            
+            List<Student> StudentList = obj.GetStudent(pagenumber, pagesize, search);
+            for (int i = 0; i < StudentList.Count; i++)
+            {
+                var dob = DateTime.Parse(StudentList[i].Dob);
+                StudentList[i].Dob = dob.ToString("dd-MM-yyyy");
+            }
+            return Json(new { data = StudentList }, JsonRequestBehavior.AllowGet);
         }
 
         // GET: Student/Create
