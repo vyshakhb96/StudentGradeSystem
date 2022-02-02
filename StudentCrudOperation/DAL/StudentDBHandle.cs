@@ -89,7 +89,7 @@ namespace StudentGradingSystem.DAL
                 student.Id = Convert.ToInt32(dt.Rows[0]["Id"]);
                 student.Regnum = Convert.ToString(dt.Rows[0]["Regnum"]);
                 student.Name = Convert.ToString(dt.Rows[0]["Name"]);
-                student.Dob = Convert.ToString(dt.Rows[0]["Dob"]);
+                student.Dob = Convert.ToDateTime(dt.Rows[0]["Dob"]);
                 student.Standard = Convert.ToString(dt.Rows[0]["Standard"]);
                 student.Mathematics = Convert.ToInt32(dt.Rows[0]["Mathematics"]);
                 student.Physics = Convert.ToInt32(dt.Rows[0]["Physics"]);
@@ -123,7 +123,7 @@ namespace StudentGradingSystem.DAL
             student.Id = Convert.ToInt32(dt.Rows[0]["Id"]);
             student.Regnum = Convert.ToString(dt.Rows[0]["Regnum"]);
             student.Name = Convert.ToString(dt.Rows[0]["Name"]);
-            student.Dob = Convert.ToString(dt.Rows[0]["Dob"]);
+            student.Dob = Convert.ToDateTime(dt.Rows[0]["Dob"]);
             student.Standard = Convert.ToString(dt.Rows[0]["Standard"]);
             student.Mathematics = Convert.ToInt32(dt.Rows[0]["Mathematics"]);
             student.Physics = Convert.ToInt32(dt.Rows[0]["Physics"]);
@@ -132,6 +132,7 @@ namespace StudentGradingSystem.DAL
 
             return student;
         }
+
         public List<Student> GetStudent(int offsetValue, int PagingSize, string search)
         {
             connection();
@@ -157,7 +158,7 @@ namespace StudentGradingSystem.DAL
                         Id = Convert.ToInt32(dr["Id"]),
                         Regnum= Convert.ToString(dr["Regnum"]),
                         Name = Convert.ToString(dr["Name"]),
-                        Dob = Convert.ToString(dr["Dob"]),
+                        Dob = Convert.ToDateTime(dr["Dob"]),
                         Standard = Convert.ToString(dr["Standard"]),
                         Mathematics = Convert.ToInt32(dr["Mathematics"]),
                         Physics = Convert.ToInt32(dr["Physics"]),

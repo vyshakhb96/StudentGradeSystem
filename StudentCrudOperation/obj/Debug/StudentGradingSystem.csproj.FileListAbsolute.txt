@@ -133,7 +133,6 @@ G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOpe
 G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\System.Web.Webpages.Deployment.dll
 G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\System.Web.Webpages.dll
 G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\System.Web.Webpages.Razor.dll
-G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\MVCLibraries.pdb
 G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\System.Web.Razor.xml
 G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\System.Web.Webpages.xml
 G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\System.Web.Webpages.Deployment.xml
@@ -141,8 +140,8 @@ G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOpe
 G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\System.Web.Helpers.xml
 G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\System.Web.Mvc.xml
 G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\obj\Debug\StudentGradingSystem.csproj.AssemblyReference.cache
 G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\obj\Debug\StudentGradingSystem.csproj.CoreCompileInputs.cache
 G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\obj\Debug\StudentGradingSystem.csproj.CopyComplete
 G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\obj\Debug\StudentCrudOperation.dll
 G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\obj\Debug\StudentCrudOperation.pdb
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\obj\Debug\StudentGradingSystem.csproj.AssemblyReference.cache

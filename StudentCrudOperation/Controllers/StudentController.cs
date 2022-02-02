@@ -16,17 +16,17 @@ namespace StudentGradingSystem.Controllers
         // GET: Student
         public ActionResult Index()
         {
-            StudentDBHandle dbhandle = new StudentDBHandle();
+            StudentDBHandle objDBHandle = new StudentDBHandle();
             ModelState.Clear();
             return View();
         }
 
-        string Grade;
+       
         private string GradeCalculation(int maths, int phy, int che)
         {
             float Total = maths + phy + che;
             float Average = (Total / 300) * 100;
-            
+            string Grade;
             if (Average >= 90)
             {
                 return Grade = "A+";
@@ -64,19 +64,35 @@ namespace StudentGradingSystem.Controllers
 
         [HttpPost]
         public ActionResult GetData()
-        {
-            StudentDBHandle obj = new StudentDBHandle();
+        {          
+            StudentDBHandle objDBHandle = new StudentDBHandle();
 
             var pagenumber = Convert.ToInt32(Request.Form["start"]);
             var pagesize = Convert.ToInt32(Request.Form["length"]);
             var search = Request.Form["search[value]"];
+            string sortColumnName = Request["columns[" + Request["order[0][column]"] + "][name]"];
+            string sortDirection = Request["order[0][dir]"];
 
-            List<Student> StudentList = obj.GetStudent(pagenumber, pagesize, search);
-            for (int i = 0; i < StudentList.Count; i++)
-            {
-                var dob = DateTime.Parse(StudentList[i].Dob);
-                StudentList[i].Dob = dob.ToString("dd-MM-yyyy");
-            }
+            List<Student> StudentList = objDBHandle.GetStudent(pagenumber, pagesize, search);
+            //int totalrows = StudentList.Count;
+            
+            //if (!string.IsNullOrEmpty(search))
+            //{
+            //    StudentList = StudentList.
+            //        Where(x => x.Name.ToLower().Contains(search.ToLower()) ||
+            //        x.Regnum.ToLower().Contains(search.ToLower()) ||
+            //        x.Dob.ToString().Contains(search) ||
+            //        x.Standard.ToString().Contains(search.ToLower()) ||
+            //        x.Mathematics.ToString().Contains(search.ToLower()) ||
+            //        x.Physics.ToString().Contains(search.ToLower()) ||
+            //        x.Chemistry.ToString().Contains(search.ToLower()) ||
+            //        x.Grade.ToLower().Contains(search.ToLower())).ToList<Student>();
+            //}
+            //int totalrowsafterfiltering = StudentList.Count;
+            StudentList = StudentList.OrderBy(sortColumnName + " " + sortDirection).ToList<Student>();
+            StudentList = StudentList.Skip(pagenumber).Take(pagesize).ToList<Student>();
+           // return Json(new { data = StudentList, draw = Request["draw"], recordsTotal = totalrows, recordsFiltered = totalrowsafterfiltering }, JsonRequestBehavior.AllowGet);
+
             return Json(new { data = StudentList }, JsonRequestBehavior.AllowGet);
         }
 
@@ -84,45 +100,51 @@ namespace StudentGradingSystem.Controllers
         [HttpGet]
         public ActionResult Create(string operation)
         {
-            Student sm = new Student();           
-            if(operation == Operations.Add.ToString())
+            
+            Student objStudent = new Student();
+            if (operation == Operations.Add.ToString())
             {
-                 sm.ActionType = Operations.Add;
+                objStudent.ActionType = Operations.Add;
             }
             ViewData["Standard"] = "";
-            return PartialView("_AddViewEdit", sm);
+            return PartialView("_AddViewEdit", objStudent);
 
         }
 
         // POST: Student/Create
         [HttpPost]
-        public ActionResult Create(Student smodel)
+        public ActionResult Create(Student objStudent)
         {
             try
             {
                 int startNumber = Convert.ToInt32(Request["start"]);
                 int length = Convert.ToInt32(Request["length"]);
-                string searchKey = Request["search[value]"];                
-                smodel.Grade = GradeCalculation(smodel.Mathematics, smodel.Physics, smodel.Chemistry);
-                StudentDBHandle dbhandle = new StudentDBHandle();
-                var isRegExist = dbhandle.GetStudentByReg(smodel.Regnum);
+                string search = Request["search[value]"];                
+                objStudent.Grade = GradeCalculation(objStudent.Mathematics, objStudent.Physics, objStudent.Chemistry);
+                StudentDBHandle objDBHandle = new StudentDBHandle();
+                var isRegExist = objDBHandle.GetStudentByReg(objStudent.Regnum);
                 if (isRegExist == null)
                 {
                     if (ModelState.IsValid)
                     {
                       
-                        smodel.Reqtype = "INSERT";
-                        var success= dbhandle.AddStudent(smodel);
+                        objStudent.Reqtype = "INSERT";
+                        var success= objDBHandle.AddStudent(objStudent);
                         if (success)
                         {
                             ViewBag.Message = "Student Details Added Successfully";
                             ModelState.Clear();                           
                         }
                     }
+                    else
+                    {
+                        return PartialView("_AddViewEdit");
+                    }
                 }
                 else
                 {
                     ViewBag.Message = "exist!";
+                    return PartialView("_AddViewEdit");
                 }
                 return Json(true, JsonRequestBehavior.AllowGet);
             }
@@ -136,14 +158,14 @@ namespace StudentGradingSystem.Controllers
         // GET: Student/Edit/5
         public ActionResult Edit(string operation, int id)
         {
-            StudentDBHandle sdb = new StudentDBHandle();
+            StudentDBHandle objDBHandle = new StudentDBHandle();
             Student sm = new Student();
             int startNumber = Convert.ToInt32(Request["start"]);
             int length = Convert.ToInt32(Request["length"]);
-            string searchKey = Request["search[value]"];
-            var stud = sdb.GetStudentById(id);
-            var dob = DateTime.Parse(stud.Dob);
-            stud.Dob = dob.ToString("dd-MM-yyyy");
+            string search = Request["search[value]"];
+            var stud = objDBHandle.GetStudentById(id);
+            //var dob = DateTime.Parse(stud.Dob);
+            //stud.Dob = dob.ToString("dd-MM-yyyy");
             ViewData["Standard"] = stud.Standard;
             if (operation == Operations.Edit.ToString())
             {
@@ -159,17 +181,23 @@ namespace StudentGradingSystem.Controllers
 
         // POST: Student/Edit/5
         [HttpPost]
-        [HandleError]
-        public ActionResult Edit(int id, Student smodel)
+        public ActionResult Edit(int id, Student objStudent)
         {
             try
             {
-                smodel.Reqtype = "UPDATE";
-                smodel.Grade = GradeCalculation(smodel.Mathematics, smodel.Physics, smodel.Chemistry);
-                StudentDBHandle sdb = new StudentDBHandle();
-                sdb.UpdateDetails(smodel);
-                return Json(true, JsonRequestBehavior.AllowGet);
-
+                if (ModelState.IsValid)
+                {
+                    objStudent.Reqtype = "UPDATE";
+                    objStudent.Grade = GradeCalculation(objStudent.Mathematics, objStudent.Physics, objStudent.Chemistry);
+                    StudentDBHandle objDBHandle = new StudentDBHandle();
+                    objDBHandle.UpdateDetails(objStudent);
+                    return Json(true, JsonRequestBehavior.AllowGet);
+                }
+                else
+                {
+                    return PartialView("_AddViewEdit");
+                }
+                
             }
             catch (Exception ex)
             {
@@ -185,20 +213,20 @@ namespace StudentGradingSystem.Controllers
         [HttpGet]
         public ActionResult Delete(string operation, int id)
         {
-            StudentDBHandle sdb = new StudentDBHandle();
-            var stud = sdb.GetStudentById(id);
+            StudentDBHandle objDBHandle = new StudentDBHandle();
+            var stud = objDBHandle.GetStudentById(id);
             return PartialView("_Delete", stud);
             
         }
         
         [HttpPost]
-        public ActionResult Delete(Student smodel)
+        public ActionResult Delete(Student objStudent)
         {
             try
             {
-                int id = smodel.Id;
-                StudentDBHandle sdb = new StudentDBHandle();
-                if (sdb.DeleteStudent(id))
+                int id = objStudent.Id;
+                StudentDBHandle objDBHandle = new StudentDBHandle();
+                if (objDBHandle.DeleteStudent(id))
                 {
                     ViewBag.AlertMsg = "Student Deleted Successfully";
                     return Json(true, JsonRequestBehavior.AllowGet);

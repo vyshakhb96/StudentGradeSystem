@@ -7,5 +7,14 @@
 
 .space
 {
-    padding-left:25%;
+    padding-left:35%;
+}
+
+.content-space{
+    display:flex;
+    justify-content:center;
+}
+
+.form-top{
+    margin-top:4%;
 }

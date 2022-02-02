@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<StudentGradingSystem.Models.Student>
 <br />
 <p>
-    <button type="button" class="btn btn-primary" onclick="createStudent()">Create</button>
+    <button type="button" style="border:none" class="btn btn-primary" onclick="createStudent()">Create</button>
 </p>
 
 
@@ -22,8 +22,8 @@
 </table>
 
 
-<div class="modal fade" id="dataModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
+<div class="modal fade" id="dataModal" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="width:37%" role="document">
         <div class="modal-content" id="dataModalBody">
 
 
@@ -36,6 +36,7 @@
 
 
 <script>
+   
     var dataTable;
     $(document).ready(function () {
         dataTable = $('#studtable_id').DataTable({
@@ -47,7 +48,16 @@
             columns: [
                 { 'data': 'Regnum', 'name': "Regnum" },
                 { 'data': 'Name', 'name': "Name" },
-                { 'data': 'Dob', 'name': "Dob" },
+                {
+                    'data': 'Dob', 'name': "Dob", "type": "DateTime",
+                    "render": function (value) {
+                        if (value === null) return "";
+                        var pattern = /Date\(([^)]+)\)/;
+                        var results = pattern.exec(value);
+                        var dt = new Date(parseFloat(results[1]));
+                        return dt.getDate() + "/" + (dt.getMonth() + 1) + "/" + dt.getFullYear()
+                    }
+                },
                 { 'data': 'Standard', 'name': "Standard" },
                 { 'data': 'Mathematics', 'name': "Mathematics" },
                 { 'data': 'Physics', 'name': "Physics" },
@@ -55,7 +65,7 @@
                 { 'data': 'Grade', 'name': "Grade" },
                 {
                     'data': 'Id', 'render': function (data) {
-                        return '<button class="btn btn-warning" onclick="getStudent(' + data + ')" >View</button>  <button class="btn btn-danger" onclick="Delete(' + data + ')"> Delete</button>';
+                        return '<button class="btn btn-info" onclick="getStudent(' + data + ')" >View</button> <button class="btn btn-warning" onclick="editGetStudent(' + data + ')" >Edit</button>  <button class="btn btn-danger" onclick="Delete(' + data + ')"> Delete</button>';
                     }
                 }
             ],
@@ -63,53 +73,60 @@
             "serverSide": true,
             "order": [0, "asc"],
             "processing": true,
+            "bInfo": false,
+            //"pagingType": "numbers",
            
         });
+        //$.fn.DataTable.ext.pager.numbers_length = 4;
     });
-
+    
 
     function createStudent() {
         $.get("/Student/Create", { operation: "Add" }, function (res) {
             $('#dataModalBody').html(res);
-            $('#dataModal').modal('show');
             document.getElementById("dob").type = "date";
-            btnEdit.style.visibility = 'hidden';
+            $('#dob').keypress(function (event) {
+                event.preventDefault();
+                return false;
+            });
+            $('#reg').attr('readonly', false);
             document.getElementById("ViewModalLabel").innerHTML = "CREATE STUDENT";
+            $("#maths").val("");
+            $("#physics").val("");
+            $("#chemistry").val("");
             $("#btnSave").show();
-
+            $('#dataModal').modal('show');
+            btnEdit.style.visibility = 'hidden';
         })
     }
 
-    function AddStudent() {
-        var modal = $("#dataModal");
-        var form = $('form[name="dataForm"]');
-        studentValidation();
-        var data = form.serialize();
-        $.post("/Student/Create", data, function (res) {
-            if (res) {
-                modal.modal('hide');
-                dataTable.ajax.reload();
-            }
-        })
-    }
-
+   
     function getStudent(id) {
         $.get("/Student/Edit", { operation: "View", id: id }, function (res) {
             $('#dataModalBody').html(res);
+            $('#dob').keypress(function (event) {
+                event.preventDefault();
+                return false;
+            });
             $('#dataModal').modal('show');
         })
     }
 
-    function UpdateStudent() {
-        var modal = $("#dataModal");
-        var form = $('form[name="dataForm"]');
-        studentValidation();
-        var data = form.serialize();
-        $.post("/Student/Edit", data, function (res) {
-            if (res) {
-                modal.modal('hide');
-                dataTable.ajax.reload();
-            }
+    function editGetStudent(id) {
+        $.get("/Student/Edit", { operation: "Edit", id: id }, function (res) {
+            $('#dataModalBody').html(res);
+            $("#btnUpdateSave").show();
+            $('#dob').keypress(function (event) {
+                event.preventDefault();
+                return false;
+            });
+            $('#reg').keypress(function (event) {
+                event.preventDefault();
+                return false;
+            });
+            btnEdit.style.visibility = 'hidden';
+            document.getElementById("ViewModalLabel").innerHTML = "EDIT STUDENT";
+            $('#dataModal').modal('show');
         })
     }
 
@@ -122,77 +139,5 @@
             }
         })
     }
-
-    function DeleteStudent() {
-        var modal = $("#dataModal");
-        var form = $('form[name="deleteForm"]');
-        var data = form.serialize();
-        $.post("/Student/Delete", data, function (res) {
-            if (res) {
-                modal.modal('hide');
-                dataTable.ajax.reload();
-            }
-        })
-    }
-
-    function Enable() {
-        $('.form-control').attr('disabled', false);
-        btnEdit.style.visibility = 'hidden';
-        $("#btnUpdateSave").show();
-        document.getElementById("ViewModalLabel").innerHTML = "EDIT STUDENT";
-    }
-
-    function studentValidation() {
-            if (document.getElementById("reg").value == "") {
-                document.getElementById("regSpan").textContent = "Register number is required";
-            } else {
-                document.getElementById("regSpan").textContent = "";
-            }
-
-            var name = document.getElementById("name").value;
-            if (name == "") {
-                document.getElementById("spanName").textContent = "Name is required";
-            } else if (!isNaN(name)) {
-                document.getElementById("spanName").textContent = "Enter proper name";
-            } else {
-                document.getElementById("spanName").textContent = "";
-            }
-
-            var dateOfBirth = document.getElementById("dob").value;
-            if (dateOfBirth == "") {
-                document.getElementById("spanDob").textContent = "Date of birth is required";
-            } else {
-                document.getElementById("spanDob").textContent = "";
-            }
-
-            var standard = $("#Standard").val();
-            if (standard.length <= 0) {
-                document.getElementById("spanStandard").textContent = "Please select a standard";
-            } else {
-                document.getElementById("spanStandard").textContent = "";
-            }
-
-            var Maths = $("#maths").val();
-            if (Maths > 100 || Maths < 0) {
-                document.getElementById("spanMaths").textContent = "Enter proper marks";
-            } else {
-                document.getElementById("spanMaths").textContent = "";
-            }
-
-            var Phy = $("#physics").val();
-            if (Phy > 100 || Phy < 0) {
-                document.getElementById("spanPhysics").textContent = "Enter proper marks";
-            } else {
-                document.getElementById("spanPhysics").textContent = "";
-            }
-
-            var Che = $("#chemistry").val();
-            if (Che > 100 || Che < 0) {
-                document.getElementById("spanChemistry").textContent = "Enter proper marks";
-            } else {
-                document.getElementById("spanChemistry").textContent = "";
-            }
-            return true;
-        }
 
 </script>

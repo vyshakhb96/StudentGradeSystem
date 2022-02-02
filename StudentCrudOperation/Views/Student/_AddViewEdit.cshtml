@@ -3,91 +3,154 @@
 
 
 <form id="dataDemo" name="dataForm">
+
     <div class="modal-header">
-        <h1 class="modal-title" id="ViewModalLabel">STUDENT DETAILS</h1>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
+        <h3 class="modal-title" style="display:flex;justify-content:center" id="ViewModalLabel">STUDENT DETAILS</h3>
+
     </div>
-    <div class="modal-body">
-        <span class="alert-danger">
-            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        </span>
+    <div >
+        <div class="modal-body">
+            <span class="alert-danger">
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            </span>
 
-        @Html.HiddenFor(model => model.Id)
-        <div class="form-group">
-            @Html.LabelFor(model => model.Regnum, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="space">
-                @Html.EditorFor(model => model.Regnum, new { htmlAttributes = new { @disabled = "disabled", @class = "form-control", @Id = "reg" } })
-                @Html.ValidationMessageFor(model => model.Regnum, "", new { @class = "text-danger", @id = "regSpan" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="space">
-                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @disabled = "disabled", @class = "form-control", @Id = "name" } })
-                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger", @Id = "spanName" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.Dob, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="space">
-                @Html.EditorFor(model => model.Dob, new { htmlAttributes = new { @type = "text", @disabled = "disabled", @class = "form-control", @Id = "dob" } })
-                @Html.ValidationMessageFor(model => model.Dob, "", new { @class = "text-danger", @Id = "spanDob" })
+            @Html.HiddenFor(model => model.Id)
+            <div class="form-group form-top">
+                @Html.LabelFor(model => model.Regnum, "Register Number", htmlAttributes: new { @class = "control-label col-md-4" })
+                <div class="space">
+                    @Html.EditorFor(model => model.Regnum, new { htmlAttributes = new { @disabled = "disabled", @class = "form-control", @readonly = "readonly", @onkeyup = "validateReg()", @Id = "reg" } })
+                    @Html.ValidationMessageFor(model => model.Regnum, "", new { @class = "text-danger", @id = "regSpan",@style="position:absolute" })
+                </div>
             </div>
 
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.Standard, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="space">
-                <select class="form-control" name="Standard" id="Standard" disabled>
-                    <option value="">--Select--</option>
-                    <option value="Plus One">Plus One</option>
-                    <option value="Plus Two">Plus Two</option>
-                </select>
-                @Html.ValidationMessageFor(model => model.Standard, "", new { @class = "text-danger", @Id = "spanStandard" })
+            <div class="form-group form-top">
+                @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-4" })
+                <div class="space">
+                    @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @disabled = "disabled", @class = "form-control", @onkeyup = "validateName()", @Id = "name" } })
+                    @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger", @Id = "spanName",@style = "position:absolute" })
+                </div>
             </div>
-        </div>
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.Mathematics, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="space">
-                @Html.EditorFor(model => model.Mathematics, new { htmlAttributes = new { @disabled = "disabled", @class = "form-control", @Id = "maths", min = "0", max = "100" } })
-                @Html.ValidationMessageFor(model => model.Mathematics, "", new { @class = "text-danger", @Id = "spanMaths" })
+            <div class="form-group form-top">
+                @Html.LabelFor(model => model.Dob, "Date Of Birth", htmlAttributes: new { @class = "control-label col-md-4" })
+                <div class="space">
+                    @Html.EditorFor(model => model.Dob, new { htmlAttributes = new { @type = "date", @Value = Model.Dob.ToString("yyyy/MM/dd"), @onchange = "validateDob()", @min = "1994-01-01", @max = "2004-01-01", @disabled = "disabled", @class = "form-control", @Id = "dob" } })
+                    @Html.ValidationMessageFor(model => model.Dob, "", new { @class = "text-danger", @Id = "spanDob", @style = "position:absolute" })
+                </div>
+
             </div>
-        </div>
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.Physics, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="space">
-                @Html.EditorFor(model => model.Physics, new { htmlAttributes = new { @disabled = "disabled", @class = "form-control", @Id = "physics", min = "0", max = "100" } })
-                @Html.ValidationMessageFor(model => model.Physics, "", new { @class = "text-danger", @Id = "spanPhysics" })
+            <div class="form-group form-top">
+                @Html.LabelFor(model => model.Standard, htmlAttributes: new { @class = "control-label col-md-4" })
+                <div class="space">
+                    <select class="form-control" name="Standard" id="Standard" onchange ="validateStandard()" disabled>
+                        <option value="">--Select--</option>
+                        <option value="Plus One">Plus One</option>
+                        <option value="Plus Two">Plus Two</option>
+                    </select>
+                    @Html.ValidationMessageFor(model => model.Standard, "", new { @class = "text-danger", @Id = "spanStandard" ,@style = "position:absolute" })
+                </div>
             </div>
-        </div>
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.Chemistry, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="space">
-                @Html.EditorFor(model => model.Chemistry, new { htmlAttributes = new { @disabled = "disabled", @class = "form-control", @Id = "chemistry", min = "0", max = "100" } })
-                @Html.ValidationMessageFor(model => model.Chemistry, "", new { @class = "text-danger", @Id = "spanChemistry" })
+            <div class="form-group form-top">
+                @Html.LabelFor(model => model.Mathematics, htmlAttributes: new { @class = "control-label col-md-4" })
+                <div class="space">
+                    @Html.EditorFor(model => model.Mathematics, new { htmlAttributes = new { @disabled = "disabled", @class = "form-control", @onkeyup = "validateMaths()", @Id = "maths", min = "0", max = "100" } })
+                    @Html.ValidationMessageFor(model => model.Mathematics, "", new { @class = "text-danger", @Id = "spanMaths",@style = "position:absolute" })
+                </div>
+            </div>
+
+            <div class="form-group form-top">
+                @Html.LabelFor(model => model.Physics, htmlAttributes: new { @class = "control-label col-md-4" })
+                <div class="space">
+                    @Html.EditorFor(model => model.Physics, new { htmlAttributes = new { @disabled = "disabled", @class = "form-control", @onkeyup = "validatePhysics()", @Id = "physics", min = "0", max = "100" } })
+                    @Html.ValidationMessageFor(model => model.Physics, "", new { @class = "text-danger", @Id = "spanPhysics",@style = "position:absolute" })
+                </div>
+            </div>
+
+            <div class="form-group form-top">
+                @Html.LabelFor(model => model.Chemistry, htmlAttributes: new { @class = "control-label col-md-4" })
+                <div class="space">
+                    @Html.EditorFor(model => model.Chemistry, new { htmlAttributes = new { @disabled = "disabled", @class = "form-control", @onkeyup = "validateChemistry()", @Id = "chemistry", min = "0", max = "100" } })
+                    @Html.ValidationMessageFor(model => model.Chemistry, "", new { @class = "text-danger", @Id = "spanChemistry",@style = "position:absolute" })
+                </div>
             </div>
         </div>
     </div>
     <div class="modal-footer">
-
-        <button type="button" id="btnEdit" class="btn btn-warning" onclick="Enable()">Edit</button>
-        <button type="button" id="btnSave" style="display:none" class="btn btn-primary" onclick="AddStudent()">Save</button>
-        <button type="button" id="btnUpdateSave" style="display:none" class="btn btn-primary" onclick="UpdateStudent()">Save</button>
-
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" id="btnEdit" style="width:12%;border:none" class="btn btn-warning" onclick="Enable()"> Edit </button>
+        <button type="button" id="btnSave" style="display: none;border:none" class="btn btn-success" onclick="AddStudent()">Save</button>
+        <button type="button" id="btnUpdateSave" style="display:none;border:none" class="btn btn-success" onclick="UpdateStudent()">Save</button>
+        <button type="button" style="border:none" class="btn btn-secondary" data-dismiss="modal">Close</button>
     </div>
 
 </form>
 
 <script>
+
+    function AddStudent() {
+        var modal = $("#dataModal");
+        var form = $('form[name="dataForm"]');      
+        validateReg();
+        validateName();
+        validateDob();
+        validateStandard();
+        validateMaths();
+        validatePhysics();
+        validateChemistry();
+        var data = form.serialize();
+        $.post("/Student/Create", data, function (res) {
+            if (res) {
+                swal({
+                    title: "Good job!",
+                    text: "Student created Successfully!",
+                    icon: "success",
+                    button: "OK",
+                });
+                //Swal.fire('Student created Successfully!');
+                modal.modal('hide');
+                dataTable.ajax.reload();
+            }
+        })
+    }
+
+    function UpdateStudent() {
+        var modal = $("#dataModal");
+        var form = $('form[name="dataForm"]');
+        validateReg();
+        validateName();
+        validateDob();
+        validateStandard();
+        validateMaths();
+        validatePhysics();
+        validateChemistry();
+
+        var data = form.serialize();
+        $.post("/Student/Edit", data, function (res) {
+            if (res) {
+                swal({
+                    title: "Good job!",
+                    text: "Student updated Successfully!",
+                    icon: "success",
+                    button: "OK",
+                });
+                modal.modal('hide');
+                dataTable.ajax.reload();
+            }
+        })
+    }
+
+    function Enable() {
+        $('.form-control').attr('disabled', false);
+        btnEdit.style.visibility = 'hidden';
+        //$('#reg').attr('disabled', true);
+        $("#btnUpdateSave").show();
+        document.getElementById("ViewModalLabel").innerHTML = "EDIT STUDENT";
+    }
+
     $(document).ready(function ()
     {
      var Standard = '@ViewData["Standard"].ToString()';
@@ -95,12 +158,18 @@
 
         var operation = '@Model.ActionType.ToString()';
         console.log(operation);
-        if (operation == '@Operations.Add' || operation == '@Operations.Edit') {
+        if (operation == '@Operations.Add') {
+            $('.form-control').attr('disabled', false);
+            $("#dob").val("");
+        }
+        else if (operation == '@Operations.Edit')
+        {
             $('.form-control').attr('disabled', false);
         }
         else if (operation == '@Operations.View')
         {
             $('.form-control').attr('disabled', true);
+
         }
         else {
             $('.form-control').attr('disabled', true);
@@ -111,9 +180,113 @@
         var stud = $("#Standard").val();
         $("#Standard").val(stud);
 
+
     });
 
+    function validateReg(){
+        if (document.getElementById("reg").value == "") {
+            document.getElementById("regSpan").textContent = "Register number is required";
+            return false;
+        } else if (document.dataForm.reg.value.length > 5) {
+            document.getElementById("regSpan").textContent = "Register number length is too large";
+            return false;
+        } else if (document.dataForm.reg.value.length > 0) {
+            document.getElementById("regSpan").textContent = "";
+        } else {
+            document.getElementById("regSpan").textContent = "";
+        }
+    }
 
+    function validateName() {
+        var name = document.getElementById("name").value;
+        if (name == "") {
+            document.getElementById("spanName").textContent = "Name is required";
+            return false;
+        } else if (!isNaN(name)) {
+            document.getElementById("spanName").textContent = "Enter proper name";
+            return false;
+        } else if (document.dataForm.name.value.length > 15) {
+            document.getElementById("spanName").textContent = "Name length is too large";
+            return false;
+        } else if (document.dataForm.name.value.length > 0) {
+            document.getElementById("spanName").textContent = "";
+        } else {
+            document.getElementById("spanName").textContent = "";
+        }
+    }
 
+    function validateDob() {
+        var dateOfBirth = document.getElementById("dob").value;
+        if (dateOfBirth == "") {
+            document.getElementById("spanDob").textContent = "Date of birth is required";
+            return false;
+        } else {
+            document.getElementById("spanDob").textContent = "";
+        }
+    }
+
+    function validateStandard() {
+        var standard = $("#Standard").val();
+        if (standard.length <= 0) {
+            document.getElementById("spanStandard").textContent = "Please select a standard";
+            return false;
+        } else {
+            document.getElementById("spanStandard").textContent = "";
+        }
+    }
+
+    function validateMaths() {
+        var Maths = $("#maths").val();
+        if (Maths > 100 || Maths < 0) {
+            document.getElementById("spanMaths").textContent = "Enter proper marks";
+            return false;
+        } else if (Maths == "") {
+            document.getElementById("spanMaths").textContent = "Please enter marks";
+            return false;
+        } else if (document.dataForm.maths.value.length == "") {
+            document.getElementById("spanMaths").textContent = "Please enter marks";
+            return false;
+        } else {
+            document.getElementById("spanMaths").textContent = "";
+        }
+
+    }
+
+    function validatePhysics() {
+        var Phy = $("#physics").val();
+        if (Phy > 100 || Phy < 0) {
+            document.getElementById("spanPhysics").textContent = "Enter proper marks";
+            return false;
+        } else if (Phy == "") {
+            document.getElementById("spanPhysics").textContent = "Please enter marks";
+            return false;
+        } else if (document.dataForm.physics.value.length == "") {
+            document.getElementById("spanPhysics").textContent = "Please enter marks";
+            return false;
+        } else {
+            document.getElementById("spanPhysics").textContent = "";
+        }
+    }
+
+    function validateChemistry() {
+        var Che = $("#chemistry").val();
+        if (Che > 100 || Che < 0) {
+            document.getElementById("spanChemistry").textContent = "Enter proper marks";
+            return false;
+        } else if (Che == "") {
+            document.getElementById("spanChemistry").textContent = "Please enter marks";
+            return false;
+        } else if (document.dataForm.chemistry.value.length == "") {
+            document.getElementById("spanChemistry").textContent = "Please enter marks";
+            return false;
+        } else {
+            document.getElementById("spanChemistry").textContent = "";
+        }
+    }
+
+    //function setReadOnly() {
+    //    var textbox = document.getElementById("reg");
+    //    textbox.readOnly = "readonly";
+    //}
 </script>
 
