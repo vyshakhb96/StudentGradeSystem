@@ -14,10 +14,10 @@ namespace StudentGradingSystem.Models
         public string Regnum { get; set; }
 
         [Required(ErrorMessage = "Name is required.")]
-        [RegularExpression("[a-zA-Z]{3,15}", ErrorMessage = "Enter proper name")]
+        [RegularExpression("[a-zA-Z ]{3,15}", ErrorMessage = "Enter proper name")]
         public string Name { get; set; }
 
-        //[MinimumAge(17)]
+        [MinimumAge(17)]
         [Required(ErrorMessage = "Date of birth is required.")]
         [DisplayFormat(DataFormatString = "{0:yyyy/dd/MMM}", ApplyFormatInEditMode = true)]
         public DateTime Dob { get; set; }

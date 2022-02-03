@@ -90,7 +90,7 @@ namespace StudentGradingSystem.Controllers
             //}
             //int totalrowsafterfiltering = StudentList.Count;
             StudentList = StudentList.OrderBy(sortColumnName + " " + sortDirection).ToList<Student>();
-            StudentList = StudentList.Skip(pagenumber).Take(pagesize).ToList<Student>();
+           // StudentList = StudentList.Skip(pagenumber).Take(pagesize).ToList<Student>();
            // return Json(new { data = StudentList, draw = Request["draw"], recordsTotal = totalrows, recordsFiltered = totalrowsafterfiltering }, JsonRequestBehavior.AllowGet);
 
             return Json(new { data = StudentList }, JsonRequestBehavior.AllowGet);
@@ -185,9 +185,11 @@ namespace StudentGradingSystem.Controllers
         {
             try
             {
+               
                 if (ModelState.IsValid)
                 {
                     objStudent.Reqtype = "UPDATE";
+                    
                     objStudent.Grade = GradeCalculation(objStudent.Mathematics, objStudent.Physics, objStudent.Chemistry);
                     StudentDBHandle objDBHandle = new StudentDBHandle();
                     objDBHandle.UpdateDetails(objStudent);

@@ -21,7 +21,7 @@
             <div class="form-group form-top">
                 @Html.LabelFor(model => model.Regnum, "Register Number", htmlAttributes: new { @class = "control-label col-md-4" })
                 <div class="space">
-                    @Html.EditorFor(model => model.Regnum, new { htmlAttributes = new { @disabled = "disabled", @class = "form-control", @readonly = "readonly", @onkeyup = "validateReg()", @Id = "reg" } })
+                    @Html.EditorFor(model => model.Regnum, new { htmlAttributes = new { @disabled = "disabled",@type="number", @class = "form-control", @readonly = "readonly", @onkeyup = "validateReg()", @Id = "reg",@max="50000" } })
                     @Html.ValidationMessageFor(model => model.Regnum, "", new { @class = "text-danger", @id = "regSpan",@style="position:absolute" })
                 </div>
             </div>
@@ -93,7 +93,7 @@
 
     function AddStudent() {
         var modal = $("#dataModal");
-        var form = $('form[name="dataForm"]');      
+        var form = $('form[name="dataForm"]');
         validateReg();
         validateName();
         validateDob();
@@ -105,7 +105,7 @@
         $.post("/Student/Create", data, function (res) {
             if (res) {
                 swal({
-                    title: "Good job!",
+                    title: "Success!",
                     text: "Student created Successfully!",
                     icon: "success",
                     button: "OK",
@@ -183,15 +183,17 @@
 
     });
 
-    function validateReg(){
-        if (document.getElementById("reg").value == "") {
-            document.getElementById("regSpan").textContent = "Register number is required";
+    function validateReg() {
+        var regnum = $("#reg").val();
+        if (regnum < 100 || regnum > 50000) {
+            document.getElementById("regSpan").textContent = "Enter correct register number";
             return false;
-        } else if (document.dataForm.reg.value.length > 5) {
-            document.getElementById("regSpan").textContent = "Register number length is too large";
+        } else if (regnum == "") {
+            document.getElementById("regSpan").textContent = "Please enter register number";
             return false;
-        } else if (document.dataForm.reg.value.length > 0) {
-            document.getElementById("regSpan").textContent = "";
+        } else if (document.dataForm.reg.value.length == "") {
+            document.getElementById("regSpan").textContent = "Please enter register number";
+            return false;
         } else {
             document.getElementById("regSpan").textContent = "";
         }
@@ -199,18 +201,24 @@
 
     function validateName() {
         var name = document.getElementById("name").value;
+        const specialChars = /^[A-z a-z]+$/;
         if (name == "") {
             document.getElementById("spanName").textContent = "Name is required";
             return false;
+        } else if (!$("#name").val().match(specialChars)) {
+            document.getElementById("spanName").textContent = "Enter proper name";
         } else if (!isNaN(name)) {
             document.getElementById("spanName").textContent = "Enter proper name";
             return false;
         } else if (document.dataForm.name.value.length > 15) {
             document.getElementById("spanName").textContent = "Name length is too large";
             return false;
+        } else if (document.dataForm.name.value.length < 3) {
+            document.getElementById("spanName").textContent = "Name length is too small";
         } else if (document.dataForm.name.value.length > 0) {
             document.getElementById("spanName").textContent = "";
-        } else {
+        }
+        else {
             document.getElementById("spanName").textContent = "";
         }
     }
@@ -238,7 +246,7 @@
     function validateMaths() {
         var Maths = $("#maths").val();
         if (Maths > 100 || Maths < 0) {
-            document.getElementById("spanMaths").textContent = "Enter proper marks";
+            document.getElementById("spanMaths").textContent = "Enter marks less than or equal to 100";
             return false;
         } else if (Maths == "") {
             document.getElementById("spanMaths").textContent = "Please enter marks";
@@ -255,7 +263,7 @@
     function validatePhysics() {
         var Phy = $("#physics").val();
         if (Phy > 100 || Phy < 0) {
-            document.getElementById("spanPhysics").textContent = "Enter proper marks";
+            document.getElementById("spanPhysics").textContent = "Enter marks less than or equal to 100";
             return false;
         } else if (Phy == "") {
             document.getElementById("spanPhysics").textContent = "Please enter marks";
@@ -271,7 +279,7 @@
     function validateChemistry() {
         var Che = $("#chemistry").val();
         if (Che > 100 || Che < 0) {
-            document.getElementById("spanChemistry").textContent = "Enter proper marks";
+            document.getElementById("spanChemistry").textContent = "Enter marks less than or equal to 100";
             return false;
         } else if (Che == "") {
             document.getElementById("spanChemistry").textContent = "Please enter marks";
