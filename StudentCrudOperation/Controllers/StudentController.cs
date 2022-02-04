@@ -64,37 +64,34 @@ namespace StudentGradingSystem.Controllers
 
         [HttpPost]
         public ActionResult GetData()
-        {          
-            StudentDBHandle objDBHandle = new StudentDBHandle();
+        {
+            try
+            {
+                StudentDBHandle objDBHandle = new StudentDBHandle();
+                var PageNumber = Convert.ToInt32(Request.Form["start"]);
+                var RowsInPage = Convert.ToInt32(Request.Form["length"]);
+                var SearchValue = Convert.ToString(Request.Form["search[value]"]);
+                string sortColumnName = Request.Form["columns[" +Request["order[0][column]"] + "][data]"];
+                string sortDirection = Request["order[0][dir]"];
+                List<Student> studentList =
+                objDBHandle.GetStudent(PageNumber, RowsInPage, SearchValue);
+                studentList = studentList.OrderBy(sortColumnName + " " +sortDirection).ToList<Student>();
 
-            var pagenumber = Convert.ToInt32(Request.Form["start"]);
-            var pagesize = Convert.ToInt32(Request.Form["length"]);
-            var search = Request.Form["search[value]"];
-            string sortColumnName = Request["columns[" + Request["order[0][column]"] + "][name]"];
-            string sortDirection = Request["order[0][dir]"];
-
-            List<Student> StudentList = objDBHandle.GetStudent(pagenumber, pagesize, search);
-            //int totalrows = StudentList.Count;
-            
-            //if (!string.IsNullOrEmpty(search))
-            //{
-            //    StudentList = StudentList.
-            //        Where(x => x.Name.ToLower().Contains(search.ToLower()) ||
-            //        x.Regnum.ToLower().Contains(search.ToLower()) ||
-            //        x.Dob.ToString().Contains(search) ||
-            //        x.Standard.ToString().Contains(search.ToLower()) ||
-            //        x.Mathematics.ToString().Contains(search.ToLower()) ||
-            //        x.Physics.ToString().Contains(search.ToLower()) ||
-            //        x.Chemistry.ToString().Contains(search.ToLower()) ||
-            //        x.Grade.ToLower().Contains(search.ToLower())).ToList<Student>();
-            //}
-            //int totalrowsafterfiltering = StudentList.Count;
-            StudentList = StudentList.OrderBy(sortColumnName + " " + sortDirection).ToList<Student>();
-           // StudentList = StudentList.Skip(pagenumber).Take(pagesize).ToList<Student>();
-           // return Json(new { data = StudentList, draw = Request["draw"], recordsTotal = totalrows, recordsFiltered = totalrowsafterfiltering }, JsonRequestBehavior.AllowGet);
-
-            return Json(new { data = StudentList }, JsonRequestBehavior.AllowGet);
+                int totalCount = objDBHandle.GetCount();
+                return Json(new
+                {
+                    data = studentList,
+                    recordsTotal = totalCount,
+                    recordsFiltered = totalCount
+                }, JsonRequestBehavior.AllowGet);
+            }
+            catch
+            {
+                return View();
+            }
         }
+
+
 
         // GET: Student/Create
         [HttpGet]
@@ -106,6 +103,9 @@ namespace StudentGradingSystem.Controllers
             {
                 objStudent.ActionType = Operations.Add;
             }
+            var myDate = DateTime.Now;
+            var newDate = myDate.AddYears(-17);
+            ViewData["date"] = newDate;
             ViewData["Standard"] = "";
             return PartialView("_AddViewEdit", objStudent);
 
@@ -143,7 +143,7 @@ namespace StudentGradingSystem.Controllers
                 }
                 else
                 {
-                    ViewBag.Message = "exist!";
+                    ViewBag.Exist = "exist!";
                     return PartialView("_AddViewEdit");
                 }
                 return Json(true, JsonRequestBehavior.AllowGet);

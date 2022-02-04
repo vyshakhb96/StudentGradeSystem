@@ -10,7 +10,7 @@
         <tr>
             <th>Register Number</th>
             <th>Name</th>
-            <th>Date of Birth</th>
+            <th>Date Of Birth</th>
             <th>Standard</th>
             <th>Mathematics</th>
             <th>Physics</th>
@@ -72,32 +72,18 @@
 
             "serverSide": true,
             "order": [0, "asc"],
-            "processing": true,
-            "bInfo": false,
+            "processing": true,           
             "columnDefs": [{ "width": "15%", "targets": [0, 3, 4, 5, 6] }, {
                 'targets': [8],
                 'orderable': false,
 
             }],
-            //"pagingType": "numbers",
            
         });
-        //$.fn.DataTable.ext.pager.numbers_length = 4;
+       
         
     });
 
-
-
-    function passInfo() {
-        let info = dataTable.page.info().page;
-        console.log(info);
-        $.get("/Student/GetData", { pagenumber: info }, function (res) {
-            if (res) {
-
-                console.log("paased")
-            }
-        })
-    }
 
     function createStudent() {
         $.get("/Student/Create", { operation: "Add" }, function (res) {
@@ -108,6 +94,7 @@
                 return false;
             });
             $('#reg').attr('readonly', false);
+
             document.getElementById("ViewModalLabel").innerHTML = "CREATE STUDENT";
             $("#maths").val("");
             $("#physics").val("");

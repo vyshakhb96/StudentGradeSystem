@@ -71,6 +71,26 @@ namespace StudentGradingSystem.DAL
             }
         }
 
+        public int GetCount()
+        {
+            int count = 0;
+            connection();
+            SqlCommand cmd = new SqlCommand("GetCount", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            SqlDataAdapter sd = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            con.Open();
+            sd.Fill(dt);
+            con.Close();
+            if (dt.Rows.Count > 0)
+            {
+                DataRow row = dt.Rows[0];
+                count = Convert.ToInt32(row["Column1"]);
+            }
+            return count;
+        }
+
+
         public Student GetStudentByReg(string regnum)
         {
             connection();
