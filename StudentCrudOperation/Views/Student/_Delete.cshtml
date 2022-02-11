@@ -28,16 +28,27 @@
         var form = $('form[name="deleteForm"]');
         var data = form.serialize();
         $.post("/Student/Delete", data, function (res) {
-            if (res) {
-                swal({
-                    title: "Good job!",
-                    text: "Student deleted Successfully!",
-                    icon: "success",
-                    button: "OK",
-                });
-                // Swal.fire('Student deleted Successfully!');
+            if (res) {               
+                toastr.options = {
+                    "closeButton": true,
+                    "newestOnTop": false,
+                    "progressBar": true,
+                    "positionClass": "toast-top-right",
+                    "preventDuplicates": false,
+                    "onclick": null,
+                    "showDuration": "200",
+                    "hideDuration": "1000",
+                    "timeOut": "3000",
+                    "extendedTimeOut": "1000",
+                    "showEasing": "swing",
+                    "hideEasing": "linear",
+                    "showMethod": "fadeIn",
+                    "hideMethod": "fadeOut"
+                }
+                toastr["success"]("Student deleted successfully!")
+              
                 modal.modal('hide');
-                dataTable.ajax.reload();
+                dataTable.ajax.reload(null, false);
             }
         })
     }

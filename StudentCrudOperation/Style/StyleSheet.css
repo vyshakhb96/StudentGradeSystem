@@ -18,3 +18,41 @@
 .form-top{
     margin-top:4%;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0;
+}
+
+.scrolls{
+    -ms-overflow-style:none;
+}
+
+.scrolls::-webkit-scrollbar {
+    display: none;
+}
+
+.footers {
+    position: fixed;
+    left: 0;
+    height:4%;
+    bottom: 0;
+    width: 100%;
+    background-color:lightgray ;
+    color: black;
+    text-align: center;
+   
+}
+
+.dataTables_length {
+    margin-top: 8px;
+    margin-left: 25px;
+}
+
+
+.dataTables_filter {
+    margin-bottom:1%;
+    margin-top:-3.5%;
+}

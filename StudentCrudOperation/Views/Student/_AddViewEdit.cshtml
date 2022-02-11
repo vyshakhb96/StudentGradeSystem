@@ -21,8 +21,8 @@
             <div class="form-group form-top">
                 @Html.LabelFor(model => model.Regnum, "Register Number", htmlAttributes: new { @class = "control-label col-md-4" })
                 <div class="space">
-                    @Html.EditorFor(model => model.Regnum, new { htmlAttributes = new { @disabled = "disabled",@type="number", @class = "form-control", @readonly = "readonly", @onkeyup = "validateReg()", @Id = "reg",@max="50000" } })
-                    @Html.ValidationMessageFor(model => model.Regnum, "", new { @class = "text-danger", @id = "regSpan",@style="position:absolute" })
+                    @Html.EditorFor(model => model.Regnum, new { htmlAttributes = new { @disabled = "disabled", @type = "number", @class = "form-control", @readonly = "readonly", @onkeyup = "validateReg()", @Id = "reg", @max = "50000" } })
+                    @Html.ValidationMessageFor(model => model.Regnum, "", new { @class = "text-danger", @id = "regSpan", @style = "position:absolute" })
                 </div>
             </div>
 
@@ -30,7 +30,7 @@
                 @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-4" })
                 <div class="space">
                     @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @disabled = "disabled", @class = "form-control", @onkeyup = "validateName()", @Id = "name" } })
-                    @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger", @Id = "spanName",@style = "position:absolute" })
+                    @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger", @Id = "spanName", @style = "position:absolute" })
                 </div>
             </div>
 
@@ -46,12 +46,12 @@
             <div class="form-group form-top">
                 @Html.LabelFor(model => model.Standard, htmlAttributes: new { @class = "control-label col-md-4" })
                 <div class="space">
-                    <select class="form-control" name="Standard" id="Standard" onchange ="validateStandard()" disabled>
+                    <select class="form-control" name="Standard" id="Standard" onchange="validateStandard()" disabled>
                         <option value="">--Select--</option>
                         <option value="Plus One">Plus One</option>
                         <option value="Plus Two">Plus Two</option>
                     </select>
-                    @Html.ValidationMessageFor(model => model.Standard, "", new { @class = "text-danger", @Id = "spanStandard" ,@style = "position:absolute" })
+                    @Html.ValidationMessageFor(model => model.Standard, "", new { @class = "text-danger", @Id = "spanStandard", @style = "position:absolute" })
                 </div>
             </div>
 
@@ -59,7 +59,7 @@
                 @Html.LabelFor(model => model.Mathematics, htmlAttributes: new { @class = "control-label col-md-4" })
                 <div class="space">
                     @Html.EditorFor(model => model.Mathematics, new { htmlAttributes = new { @disabled = "disabled", @class = "form-control", @onkeyup = "validateMaths()", @Id = "maths", min = "0", max = "100" } })
-                    @Html.ValidationMessageFor(model => model.Mathematics, "", new { @class = "text-danger", @Id = "spanMaths",@style = "position:absolute" })
+                    @Html.ValidationMessageFor(model => model.Mathematics, "", new { @class = "text-danger", @Id = "spanMaths", @style = "position:absolute" })
                 </div>
             </div>
 
@@ -67,7 +67,7 @@
                 @Html.LabelFor(model => model.Physics, htmlAttributes: new { @class = "control-label col-md-4" })
                 <div class="space">
                     @Html.EditorFor(model => model.Physics, new { htmlAttributes = new { @disabled = "disabled", @class = "form-control", @onkeyup = "validatePhysics()", @Id = "physics", min = "0", max = "100" } })
-                    @Html.ValidationMessageFor(model => model.Physics, "", new { @class = "text-danger", @Id = "spanPhysics",@style = "position:absolute" })
+                    @Html.ValidationMessageFor(model => model.Physics, "", new { @class = "text-danger", @Id = "spanPhysics", @style = "position:absolute" })
                 </div>
             </div>
 
@@ -75,7 +75,14 @@
                 @Html.LabelFor(model => model.Chemistry, htmlAttributes: new { @class = "control-label col-md-4" })
                 <div class="space">
                     @Html.EditorFor(model => model.Chemistry, new { htmlAttributes = new { @disabled = "disabled", @class = "form-control", @onkeyup = "validateChemistry()", @Id = "chemistry", min = "0", max = "100" } })
-                    @Html.ValidationMessageFor(model => model.Chemistry, "", new { @class = "text-danger", @Id = "spanChemistry",@style = "position:absolute" })
+                    @Html.ValidationMessageFor(model => model.Chemistry, "", new { @class = "text-danger", @Id = "spanChemistry", @style = "position:absolute" })
+                </div>
+            </div>
+            <div class="form-group form-top" id="gradeDiv">
+                @Html.LabelFor(model => model.Grade, htmlAttributes: new { @class = "control-label col-md-4" })
+                <div class="space">
+                    @Html.EditorFor(model => model.Grade, new { htmlAttributes = new { @disabled = "disabled", @class = "form-control", @readonly = "readonly", @Id ="grade" } })
+                    @Html.ValidationMessageFor(model => model.Grade, "", new { @class = "text-danger", @Id = "spanGrade", @style = "position:absolute" })
                 </div>
             </div>
         </div>
@@ -84,7 +91,7 @@
         <button type="button" id="btnEdit" style="width:12%;border:none" class="btn btn-warning" onclick="Enable()"> Edit </button>
         <button type="button" id="btnSave" style="display: none;border:none" class="btn btn-success" onclick="AddStudent()">Save</button>
         <button type="button" id="btnUpdateSave" style="display:none;border:none" class="btn btn-success" onclick="UpdateStudent()">Save</button>
-        <button type="button" style="border:none" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" style="border: none; margin-right: 25px;" class="btn btn-secondary" data-dismiss="modal">Close</button>
     </div>
 
 </form>
@@ -104,13 +111,24 @@
         var data = form.serialize();
         $.post("/Student/Create", data, function (res) {
             if (res) {
-                swal({
-                    title: "Success!",
-                    text: "Student created Successfully!",
-                    icon: "success",
-                    button: "OK",
-                });
-                //Swal.fire('Student created Successfully!');
+                toastr.options = {
+                    "closeButton": true,
+                    "newestOnTop": false,
+                    "progressBar": true,
+                    "positionClass": "toast-top-right",
+                    "preventDuplicates": false,
+                    "onclick": null,
+                    "showDuration": "200",
+                    "hideDuration": "1000",
+                    "timeOut": "3000",
+                    "extendedTimeOut": "1000",
+                    "showEasing": "swing",
+                    "hideEasing": "linear",
+                    "showMethod": "fadeIn",
+                    "hideMethod": "fadeOut"
+                }
+                toastr["success"]("Student Added successfully!")
+
                 modal.modal('hide');
                 dataTable.ajax.reload();
             }
@@ -131,14 +149,27 @@
         var data = form.serialize();
         $.post("/Student/Edit", data, function (res) {
             if (res) {
-                swal({
-                    title: "Good job!",
-                    text: "Student updated Successfully!",
-                    icon: "success",
-                    button: "OK",
-                });
+                
+                toastr.options = {
+                    "closeButton": true,
+                    "newestOnTop": false,
+                    "progressBar": true,
+                    "positionClass": "toast-top-right",
+                    "preventDuplicates": false,
+                    "onclick": null,
+                    "showDuration": "200",
+                    "hideDuration": "1000",
+                    "timeOut": "3000",
+                    "extendedTimeOut": "1000",
+                    "showEasing": "swing",
+                    "hideEasing": "linear",
+                    "showMethod": "fadeIn",
+                    "hideMethod": "fadeOut"
+                }
+                toastr["success"]("Student updated successfully!")
+                  
                 modal.modal('hide');
-                dataTable.ajax.reload();
+                dataTable.ajax.reload(null, false);
             }
         })
     }
@@ -153,8 +184,8 @@
 
     $(document).ready(function ()
     {
-     var Standard = '@ViewData["Standard"].ToString()';
-        $("#Standard").val(Standard);
+       
+        $("#Standard").val('@Model.Standard');
         var today = '@DateTime.Today.ToString("MM/dd/yyyy")';
 
         var date = new Date();
@@ -188,8 +219,6 @@
     $("#Standard").change(function () {
         var stud = $("#Standard").val();
         $("#Standard").val(stud);
-
-
     });
 
     function validateReg() {
@@ -254,6 +283,7 @@
 
     function validateMaths() {
         var Maths = $("#maths").val();
+
         if (Maths > 100 || Maths < 0) {
             document.getElementById("spanMaths").textContent = "Enter marks less than or equal to 100";
             return false;
@@ -301,9 +331,5 @@
         }
     }
 
-    //function setReadOnly() {
-    //    var textbox = document.getElementById("reg");
-    //    textbox.readOnly = "readonly";
-    //}
 </script>
 

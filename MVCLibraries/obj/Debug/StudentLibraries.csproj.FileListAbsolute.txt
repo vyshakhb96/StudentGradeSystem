@@ -63,3 +63,4 @@ G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\MVCLibraries\o
 G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\MVCLibraries\obj\Debug\StudentLibraries.csproj.CopyComplete
 G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\MVCLibraries\obj\Debug\MVCLibraries.dll
 G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\MVCLibraries\obj\Debug\MVCLibraries.pdb
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\MVCLibraries\bin\Debug\System.Linq.Dynamic.dll

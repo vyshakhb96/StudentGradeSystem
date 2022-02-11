@@ -77,7 +77,7 @@ namespace StudentGradingSystem.Controllers
                 objDBHandle.GetStudent(PageNumber, RowsInPage, SearchValue);
                 studentList = studentList.OrderBy(sortColumnName + " " +sortDirection).ToList<Student>();
 
-                int totalCount = objDBHandle.GetCount();
+                int totalCount = objDBHandle.GetCount(SearchValue);
                 return Json(new
                 {
                     data = studentList,
@@ -103,12 +103,7 @@ namespace StudentGradingSystem.Controllers
             {
                 objStudent.ActionType = Operations.Add;
             }
-            var myDate = DateTime.Now;
-            var newDate = myDate.AddYears(-17);
-            ViewData["date"] = newDate;
-            ViewData["Standard"] = "";
             return PartialView("_AddViewEdit", objStudent);
-
         }
 
         // POST: Student/Create
@@ -164,9 +159,8 @@ namespace StudentGradingSystem.Controllers
             int length = Convert.ToInt32(Request["length"]);
             string search = Request["search[value]"];
             var stud = objDBHandle.GetStudentById(id);
-            //var dob = DateTime.Parse(stud.Dob);
-            //stud.Dob = dob.ToString("dd-MM-yyyy");
-            ViewData["Standard"] = stud.Standard;
+           
+           // ViewData["Standard"] = stud.Standard;
             if (operation == Operations.Edit.ToString())
             {
                 stud.ActionType = Operations.Edit;
