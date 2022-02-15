@@ -53,6 +53,60 @@ input::-webkit-inner-spin-button {
 
 
 .dataTables_filter {
-    margin-bottom:1%;
-    margin-top:-3.5%;
+    margin-bottom: 1%;
+    margin-top: -3.5%;
+    margin-right: 20px;
+}
+
+a.red {
+    color: red ;
+}
+
+a.blue {
+    color: #50cbc6;
+}
+
+a.orenge {
+    color: green;
+    margin: 10%;
+   
+}
+a.red:hover {
+    cursor: pointer;  
+    color:crimson;
+}
+a.blue:hover {
+    cursor: pointer;
+    color:indigo;
+}
+a.orenge:hover {
+    cursor: pointer;
+    color:darkorange;
+}
+
+
+.glyphicon{
+    font-size:large;
+}
+
+.html, body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden
+}
+
+div.container {
+    width: 90%;
+}
+
+.glyphicon-eye-open:hover{
+    transform:scale(1.2);
+}
+
+.glyphicon-edit:hover {
+    transform: scale(1.2);
+}
+
+.glyphicon-trash:hover {
+    transform: scale(1.2);
 }

@@ -65,13 +65,15 @@
                 { 'data': 'Grade', 'name': "Grade" },
                 {
                     'data': 'Id', 'render': function (data) {
-                        return '<button class="btn btn-info" title="View" onclick="getStudent(' + data + ')" > <span class="glyphicon glyphicon-eye-open"></span></button> <button class="btn btn-warning" title="Edit" onclick="editGetStudent(' + data + ')" > <span class="glyphicon glyphicon-pencil"></span></button>  <button class="btn btn-danger" title="Delete"  onclick="Delete(' + data + ')"> <span class="glyphicon glyphicon-trash"></span></button>';
+                        return '<a class="blue" title="View" onclick="getStudent(' + data + ')" > <span class="glyphicon glyphicon-eye-open"></span></a> <a class="orenge" title="Edit" onclick="editGetStudent(' + data + ')" > <span class="glyphicon glyphicon-edit"></span></a>  <a class="red" title="Delete"  onclick="Delete(' + data + ')"> <span class="glyphicon glyphicon-trash"></span></a>';
                     }
                 }
             ],
 
             "serverSide": true,
             "order": [0, "asc"],
+            "scrollY": "370px",
+            "scrollCollapse": false,
             "processing": true,
             "dom": '<"top"f>rt<"bottom"ilp><"clear">',
             "columnDefs": [{ "width": "15%", "targets": [0,2,3, 4, 5, 6,7,8], className: 'dt-head-center dt-body-center' }, {
@@ -79,7 +81,9 @@
                 'orderable': false,
 
             }],
-           
+
+
+
         });
        
         
