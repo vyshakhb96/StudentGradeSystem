@@ -6,6 +6,8 @@ using System.Linq.Dynamic;
 using StudentLibraries.Enum;
 using StudentGradingSystem.Models;
 using StudentGradingSystem.DAL;
+using System.Data;
+using ArrayToPdf;
 
 namespace StudentGradingSystem.Controllers
 {
@@ -238,5 +240,32 @@ namespace StudentGradingSystem.Controllers
             }
             return View();
         }
+
+        [HttpGet]
+        public ActionResult Print()
+        {
+
+            StudentDBHandle objdbhandle = new StudentDBHandle();
+            List<Student> objbooking = objdbhandle.ListOfStudent();
+
+            var table = new DataTable("STUDENT GRADING SYSTEM");
+            table.Columns.Add("Regnum", typeof(string));
+            table.Columns.Add("Name", typeof(string));
+            table.Columns.Add("Dob", typeof(DateTime));
+            table.Columns.Add("Standard", typeof(string));
+            table.Columns.Add("Mathematics", typeof(int));
+            table.Columns.Add("Physics", typeof(int));
+            table.Columns.Add("Chemistry", typeof(int));
+            table.Columns.Add("Grade", typeof(string));
+
+            foreach (Student booking in objbooking)
+                table.Rows.Add(booking.Regnum, booking.Name, booking.Dob, booking.Standard, booking.Mathematics, booking.Physics, booking.Chemistry, booking.Grade);
+
+            var pdf = table.ToPdf();
+            System.IO.File.WriteAllBytes(@"C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\PreviewPdf\result.pdf", pdf);
+            return PartialView("_PrintPage");
+
+        }
+
     }
 }

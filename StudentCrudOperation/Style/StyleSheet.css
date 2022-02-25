@@ -34,6 +34,10 @@ input::-webkit-inner-spin-button {
     display: none;
 }
 
+.dataTables_scrollBody {
+    overflow-x:hidden !important;
+}
+
 .footers {
     position: fixed;
     left: 0;

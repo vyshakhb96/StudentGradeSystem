@@ -258,5 +258,43 @@ namespace StudentGradingSystem.DAL
                 Console.WriteLine("finally executed");
             }
         }
+
+        public List<Student> ListOfStudent()
+        {
+            connection();
+            List<Student> studentlist = new List<Student>();
+
+            SqlCommand cmd = new SqlCommand("GetAllStudent", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            SqlDataAdapter sd = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+
+                con.Open();
+                sd.Fill(dt);
+                con.Close();
+
+                foreach (DataRow dr in dt.Rows)
+                {
+                    studentlist.Add(
+                        new Student
+                        {
+                            Id = Convert.ToInt32(dr["Id"]),
+                            Regnum = Convert.ToString(dr["Regnum"]),
+                            Name = Convert.ToString(dr["Name"]),
+                            Dob = Convert.ToDateTime(dr["Dob"]),
+                            Standard = Convert.ToString(dr["Standard"]),
+                            Mathematics = Convert.ToInt32(dr["Mathematics"]),
+                            Physics = Convert.ToInt32(dr["Physics"]),
+                            Chemistry = Convert.ToInt32(dr["Chemistry"]),
+                            Grade = Convert.ToString(dr["Grade"]),
+                        });
+
+
+
+                }
+                    
+                  
+                return studentlist;
+        }
     }
 }
