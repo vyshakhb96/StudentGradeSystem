@@ -15,7 +15,8 @@
             <span class="sr-only">Toggle Dropdown</span>
         </button>
         <div class="dropdown-menu">
-            <a class="dropdown-item" onclick="ToPdf()">Export as Pdf</a>
+          
+            <a class="dropdown-item" onclick="ToPdf()">View / Export as Pdf</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" id="btnExcel">Export as excel</a>
         </div>
@@ -45,14 +46,13 @@
         <div class="modal-dialog" style="width:37%" role="document">
             <div class="modal-content" id="dataModalBody">
 
-
             </div>
         </div>
     </div>
 
     <div class="modal bd-example-modal-lg" id="dataModalPrint" tabindex="-1" role="dialog">
-        <div class="modal-dialog modal-lg" style="width:100%"role="document">
-            <div class="modal-content " id="ModalBodyPrint" >
+        <div class="modal-dialog modal-lg"  role="document" style="width:100% ; margin-left:1.5%;" >
+            <div class="modal-content " id="ModalBodyPrint" style="width:155%" >
 
             </div>
         </div>
@@ -149,17 +149,7 @@
         function pagelengthfn() {
             dataTable.page.len(pageLength).draw();
         }
-        //$(document).on('click', '#btnPrint', function () {
-        //    var info = dataTable.page.info();
-        //    pageLength = info.length;
-        //    dataTable.page.len(info.recordsTotal).draw();
-        //    setTimeout(printAllrecord, 1000);
-        //});
-        //function printAllrecord() {
-        //    $(".buttons-print")[0].click();
-        //    setTimeout(pagelengthfn, 1000);
-        //}
-     
+       
 
         $(document).on('click', '#btnExcel', function () {
             var info = dataTable.page.info();
@@ -194,9 +184,10 @@
                 $('#reg').attr('readonly', false);
                 document.getElementById("ViewModalLabel").innerHTML = "CREATE STUDENT"
                 $("#btnSave").show();
+                $("#btnEdit").hide();
                 $('#dataModal').modal('show');
+                $("#gradeDiv").hide();
                 console.log(info.recordsTotal);
-
                 btnEdit.style.visibility = 'hidden';
                 var div = document.getElementById("gradeDiv");
                 if (div.style.display !== "none") {
@@ -254,16 +245,31 @@
                 }
             })
         }
+        //function PrintAll() {
+        //    $.get("/Student/Print", function (res) {
+        //        if (res) {
+        //            $('#ModalBodyPrint').html(res);
+        //            window.frames["print_frame"].window.focus();
+        //            window.frames["print_frame"].window.print();
+        //        }
+        //    })
+
+        //}
         function PrintAll() {
             $.get("/Student/Print", function (res) {
                 if (res) {
                     $('#ModalBodyPrint').html(res);
-                    window.frames["print_frame"].window.focus();
-                    window.frames["print_frame"].window.print();
-                }
-            })
+                    $('#dataModalPrint').modal('show');
 
+                }
+            });
+            setTimeout(getprint, 300)
         }
+        function getprint() {
+            window.frames["print_frame"].window.focus();
+            window.frames["print_frame"].window.print();
+        }
+
         function ToPdf() {
             $.get("/Student/Print", function (res) {
                 if (res) {
@@ -272,4 +278,16 @@
                 }
             })
         }
+
+        //function printall() {
+        //$.get("/Booking/Print", function (res) {
+        //    $("#printPreview").html(res);
+        //    $('#print').modal('show');
+        //});
+        //setTimeout(getprint,1000)
+        //}
+        //function getprint() {
+        //    window.frames["print_frames"].window.focus();
+        //    window.frames["print_frames"].window.print();
+        //}
     </script>
