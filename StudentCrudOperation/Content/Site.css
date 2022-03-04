@@ -16,3 +16,11 @@ textarea {
     max-width: 280px;
 }
 
+dropdown-toggle-split
+{
+    height:3rem;
+}
+
+dataTables_filter {
+    margin-top: -25px;
+}

@@ -79,6 +79,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
     <None Include="Scripts\jquery-3.6.0.min.map" />
     <None Include="Scripts\jquery-3.6.0.slim.min.map" />

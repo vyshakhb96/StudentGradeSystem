@@ -262,7 +262,7 @@ namespace StudentGradingSystem.Controllers
                 table.Rows.Add(booking.Regnum, booking.Name, booking.Dob, booking.Standard, booking.Mathematics, booking.Physics, booking.Chemistry, booking.Grade);
 
             var pdf = table.ToPdf();
-            System.IO.File.WriteAllBytes(@"C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\PreviewPdf\result.pdf", pdf);
+            System.IO.File.WriteAllBytes(@"D:\Vyshakh_Project\StudentCrudOperation\PreviewPdf\result.pdf", pdf);
             return PartialView("_PrintPage");
 
         }

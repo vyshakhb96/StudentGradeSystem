@@ -1,28 +1,26 @@
 ﻿@model IEnumerable<StudentGradingSystem.Models.Student>
- <br />
-
-  <div style="position: relative;width:75%;">
-
-    <div style="float:left;">
-            <button type="button" style="border: none; margin-right: 5%;"  class="btn btn-primary" onclick="createStudent()">Create</button>
-    </div>
-
-    <div class="btn-group" style="margin-left: 2%;">
 
 
-        <button type="button" class="btn btn-success" onclick="PrintAll()">Print</button>
-        <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span class="sr-only">Toggle Dropdown</span>
-        </button>
-        <div class="dropdown-menu">
-          
-            <a class="dropdown-item" onclick="ToPdf()">View / Export as Pdf</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" id="btnExcel">Export as excel</a>
-        </div>
+ <div style="position: relative;width:75%;">
+     <br />
+     <div style="float:left;">
+         <button type="button" style="height: 37px;border: none; margin-right: 5%;" class="btn btn-primary" onclick="createStudent()">Create</button>
      </div>
 
-  </div>
+     <div class="btn-group" style="margin-left: 2%;">
+
+         <button type="button" class="btn btn-success" style="height:37px" onclick="PrintAll()">Print</button>
+         <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             <span class="glyphicon glyphicon-chevron-down"></span></button>
+         <div class="dropdown-menu">
+
+             <a class="dropdown-item" onclick="ToPdf()" style="cursor:pointer">View / Export as Pdf</a>
+             <div class="dropdown-divider"></div>
+             <a class="dropdown-item" id="btnExcel" style="cursor:pointer">Export as excel</a>
+         </div>
+     </div>
+
+ </div>
 
 
     <table id="studtable_id" class="table table-striped table-bordered dt-responsive nowrap">
@@ -50,9 +48,9 @@
         </div>
     </div>
 
-    <div class="modal bd-example-modal-lg" id="dataModalPrint" tabindex="-1" role="dialog">
-        <div class="modal-dialog modal-lg"  role="document" style="width:100% ; margin-left:1.5%;" >
-            <div class="modal-content " id="ModalBodyPrint" style="width:155%" >
+    <div class="modal" id="dataModalPrint" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-xl"  role="document" style="width:max-content; " >
+            <div class="modal-content " id="ModalBodyPrint"  >
 
             </div>
         </div>
@@ -162,17 +160,6 @@
             setTimeout(pagelengthfn, 1000);
         }
 
-        //$(document).on('click', '#btnPdf', function () {
-        //    var info = dataTable.page.info();
-        //    pageLength = info.length;
-        //    dataTable.page.len(info.recordsTotal).draw();
-        //    setTimeout(pdfAll, 1000);
-        //});
-        //function pdfAll() {
-        //    $(".buttons-pdf")[0].click();
-        //    setTimeout(pagelengthfn, 1000);
-        //}
-
         function createStudent() {
             $.get("/Student/Create", { operation: "Add" }, function (res) {
                 $('#dataModalBody').html(res);
@@ -245,16 +232,7 @@
                 }
             })
         }
-        //function PrintAll() {
-        //    $.get("/Student/Print", function (res) {
-        //        if (res) {
-        //            $('#ModalBodyPrint').html(res);
-        //            window.frames["print_frame"].window.focus();
-        //            window.frames["print_frame"].window.print();
-        //        }
-        //    })
-
-        //}
+        
         function PrintAll() {
             $.get("/Student/Print", function (res) {
                 if (res) {
@@ -263,7 +241,7 @@
 
                 }
             });
-            setTimeout(getprint, 300)
+            setTimeout(getprint, 1000)
         }
         function getprint() {
             window.frames["print_frame"].window.focus();
@@ -279,15 +257,5 @@
             })
         }
 
-        //function printall() {
-        //$.get("/Booking/Print", function (res) {
-        //    $("#printPreview").html(res);
-        //    $('#print').modal('show');
-        //});
-        //setTimeout(getprint,1000)
-        //}
-        //function getprint() {
-        //    window.frames["print_frames"].window.focus();
-        //    window.frames["print_frames"].window.print();
-        //}
+       
     </script>
