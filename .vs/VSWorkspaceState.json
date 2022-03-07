@@ -2,9 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\StudentCrudOperation",
+    "\\StudentCrudOperation\\Content",
     "\\StudentCrudOperation\\Views",
     "\\StudentCrudOperation\\Views\\Student"
   ],
-  "SelectedNode": "\\StudentCrudOperation\\Views\\Student\\Index.cshtml",
+  "SelectedNode": "\\StudentCrudOperation\\Content\\Site.css",
   "PreviewInSolutionExplorer": false
 }

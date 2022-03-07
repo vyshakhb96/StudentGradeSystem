@@ -329,3 +329,4 @@ D:\Vyshakh_Project\StudentCrudOperation\obj\Debug\StudentGradingSystem.csproj.Co
 D:\Vyshakh_Project\StudentCrudOperation\obj\Debug\StudentGradingSystem.csproj.CopyComplete
 D:\Vyshakh_Project\StudentCrudOperation\obj\Debug\StudentCrudOperation.dll
 D:\Vyshakh_Project\StudentCrudOperation\obj\Debug\StudentCrudOperation.pdb
+D:\Vyshakh_Project\StudentCrudOperation\obj\Debug\StudentGradingSystem.csproj.AssemblyReference.cache
