@@ -1,261 +1,261 @@
 ﻿@model IEnumerable<StudentGradingSystem.Models.Student>
 
 
- <div style="position: relative;width:75%;">
-     <br />
-     <div style="float:left;">
-         <button type="button" style="height: 37px; border: none; margin-right: 5%;" class="btn btn-primary" onclick="createStudent()">Create</button>
-     </div>
+<div style="position: relative;width:75%;">
+    <br />
+    <div style="float:left;">
+        <button type="button" style="height: 37px; border: none; margin-right: 5%;" class="btn btn-primary" onclick="createStudent()">Create</button>
+    </div>
 
-     <div class="btn-group" style="margin-left: 2%;">
+    <div class="btn-group" style="margin-left: 2%;">
 
-         <button type="button" class="btn btn-success" style="height: 37px; " onclick="PrintAll()">Print</button>
-         <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-             <span class="glyphicon glyphicon-chevron-down" ></span></button>
-         <div class="dropdown-menu">
+        <button type="button" class="btn btn-success" style="height: 37px; " onclick="PrintAll()">Print</button>
+        <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="glyphicon glyphicon-chevron-down"></span>
+        </button>
+        <div class="dropdown-menu">
 
-             <a class="dropdown-item" onclick="ToPdf()" style="cursor:pointer">View / Export as Pdf</a>
-             <div class="dropdown-divider"></div>
-             <a class="dropdown-item" id="btnExcel" style="cursor:pointer">Export as excel</a>
-         </div>
-     </div>
-
- </div>
-
-
-    <table id="studtable_id" class="table table-striped table-bordered dt-responsive nowrap">
-        <thead style="background-color: #1C2833; color: white">
-            <tr>
-                <th>Register Number</th>
-                <th>Name</th>
-                <th>Date Of Birth</th>
-                <th>Standard</th>
-                <th>Mathematics</th>
-                <th>Physics</th>
-                <th>Chemistry</th>
-                <th>Overall Grade</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-    </table>
-
-
-    <div class="modal fade" id="dataModal" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="ModalLabel" aria-hidden="true">
-        <div class="modal-dialog" style="width:37%" role="document">
-            <div class="modal-content" id="dataModalBody">
-
-            </div>
+            <a class="dropdown-item" onclick="ToPdf()" style="cursor:pointer">View / Export as Pdf</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" id="btnExcel" style="cursor:pointer">Export as excel</a>
         </div>
     </div>
 
-    <div class="modal" id="dataModalPrint" tabindex="-1" role="dialog">
-        <div class="modal-dialog modal-xl"  role="document" style="width:max-content; " >
-            <div class="modal-content " id="ModalBodyPrint"  >
+</div>
 
-            </div>
+
+<table id="studtable_id" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+    <thead style="background-color: #1C2833; color: white">
+        <tr>
+            <th>Register Number</th>
+            <th>Name</th>
+            <th>Date Of Birth</th>
+            <th>Standard</th>
+            <th>Mathematics</th>
+            <th>Physics</th>
+            <th>Chemistry</th>
+            <th>Overall Grade</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+</table>
+
+
+<div class="modal fade" id="dataModal" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content" id="dataModalBody">
+
         </div>
     </div>
+</div>
+
+<div class="modal" id="dataModalPrint" tabindex="-1" role="dialog" >
+    <div class="modal-dialog modal-xl" role="document" style="width:94%; margin-left:3%; margin-right:3% ">
+        <div class="modal-content " id="ModalBodyPrint">
+
+        </div>
+    </div>
+</div>
 
 
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
+<script>
 
-    <script>
+    var dataTable;
+    $(document).ready(function () {
+        dataTable = $('#studtable_id').DataTable({
+            "ajax": {
+                url: "/Student/GetData",
+                type: "POST",
+                dataType: "json",
 
-        var dataTable;
-        $(document).ready(function () {
-            dataTable = $('#studtable_id').DataTable({
-                "ajax": {
-                    url: "/Student/GetData",
-                    type: "POST",
-                    dataType: "json",
-
-                },
-                columns: [
-                    { 'data': 'Regnum', 'name': "Regnum" },
-                    { 'data': 'Name', 'name': "Name" },
-                    {
-                        'data': 'Dob', 'name': "Dob", "type": "DateTime",
-                        "render": function (value) {
-                            if (value === null) return "";
-                            var pattern = /Date\(([^)]+)\)/;
-                            var results = pattern.exec(value);
-                            var dt = new Date(parseFloat(results[1]));
-                            return dt.getDate() + "/" + (dt.getMonth() + 1) + "/" + dt.getFullYear()
-                        }
-                    },
-                    { 'data': 'Standard', 'name': "Standard" },
-                    { 'data': 'Mathematics', 'name': "Mathematics" },
-                    { 'data': 'Physics', 'name': "Physics" },
-                    { 'data': 'Chemistry', 'name': "Chemistry" },
-                    { 'data': 'Grade', 'name': "Grade" },
-                    {
-                        'data': 'Id', 'render': function (data) {
-                            return '<a class="blue" title="View" onclick="getStudent(' + data + ')" > <span class="glyphicon glyphicon-eye-open"></span></a> <a class="orenge" title="Edit" onclick="editGetStudent(' + data + ')" > <span class="glyphicon glyphicon-edit"></span></a>  <a class="red" title="Delete"  onclick="Delete(' + data + ')"> <span class="glyphicon glyphicon-trash"></span></a>';
-                        }
-                    }
-                ],
-
-                "serverSide": true,
-                "order": [0, "asc"],
-                "scrollY": "370px",
-                "scrollX": false,
-                "scrollCollapse": false,
-                "processing": true,
-                "dom": '<"top"f>rt<"bottom"ilp><"clear">',
-                "dom": 'Bfrtipl',
-                "buttons": [{
-                    extend: 'excel',
-                    exportOptions: {
-                        columns: [0, 1, 2, 3, 4, 5, 6, 7]
-                    }
-                },
+            },
+            columns: [
+                { 'data': 'Regnum', 'name': "Regnum" },
+                { 'data': 'Name', 'name': "Name" },
                 {
-                    extend: 'pdf',
-                    exportOptions: {
-                        columns: [0, 1, 2, 3, 4, 5, 6, 7]
+                    'data': 'Dob', 'name': "Dob", "type": "DateTime",
+                    "render": function (value) {
+                        if (value === null) return "";
+                        var pattern = /Date\(([^)]+)\)/;
+                        var results = pattern.exec(value);
+                        var dt = new Date(parseFloat(results[1]));
+                        return dt.getDate() + "/" + (dt.getMonth() + 1) + "/" + dt.getFullYear()
                     }
                 },
+                { 'data': 'Standard', 'name': "Standard" },
+                { 'data': 'Mathematics', 'name': "Mathematics" },
+                { 'data': 'Physics', 'name': "Physics" },
+                { 'data': 'Chemistry', 'name': "Chemistry" },
+                { 'data': 'Grade', 'name': "Grade" },
                 {
-                    extend: 'print',
-                    extend: 'print',
-                    autoPrint: true,
-                    exportOptions: {
-                        columns: [0, 1, 2, 3, 4, 5, 6, 7]
+                    'data': 'Id', 'render': function (data) {
+                        return '<a class="blue" title="View" onclick="getStudent(' + data + ')" > <span class="glyphicon glyphicon-eye-open"></span></a> <a class="orenge" title="Edit" onclick="editGetStudent(' + data + ')" > <span class="glyphicon glyphicon-edit"></span></a>  <a class="red" title="Delete"  onclick="Delete(' + data + ')"> <span class="glyphicon glyphicon-trash"></span></a>';
                     }
-                    }],
+                }
+            ],
 
-                "columnDefs": [{ "width": "14%", "targets": [0], className: 'dt-head-center dt-body-center' },
-                    {
-                    'targets': [8],
-                        'orderable': false,
-                    },
-                    { "width": "10%", "targets": [5, 6], className: 'dt-head-center dt-body-center' },
-                    { "width": "12%", "targets": [2, 4, 7], className: 'dt-head-center dt-body-center' },
-                    { "targets": [1,3,8], className: 'dt-head-center dt-body-center' },
+            "serverSide": true,
+            "order": [0, "asc"],
+            "scrollY": "370px",
+            "scrollX": "370px",
+            "scrollCollapse": false,
+            "processing": true,
+            "dom": '<"top"f>rt<"bottom"ilp><"clear">',
+            "dom": 'Bfrtipl',
+            "buttons": [{
+                extend: 'excel',
+                exportOptions: {
+                    columns: [0, 1, 2, 3, 4, 5, 6, 7]
+                }
+            },
+            {
+                extend: 'pdf',
+                exportOptions: {
+                    columns: [0, 1, 2, 3, 4, 5, 6, 7]
+                }
+            },
+            {
+                extend: 'print',
+                extend: 'print',
+                autoPrint: true,
+                exportOptions: {
+                    columns: [0, 1, 2, 3, 4, 5, 6, 7]
+                }
+            }],
+
+            "columnDefs": [{ "width": "14%", "targets": [0], className: 'dt-head-center dt-body-center' },
+            {
+                'targets': [8],
+                'orderable': false,
+            },
+            { "width": "10%", "targets": [5, 6], className: 'dt-head-center dt-body-center' },
+            { "width": "12%", "targets": [2, 4, 7], className: 'dt-head-center dt-body-center' },
+            { "targets": [1, 3, 8], className: 'dt-head-center dt-body-center' },
 
 
-                ],
-
-            });
+            ],
 
         });
 
+    });
 
 
-        function pagelengthfn() {
-            dataTable.page.len(pageLength).draw();
-        }
-       
 
-        $(document).on('click', '#btnExcel', function () {
-            var info = dataTable.page.info();
-            pageLength = info.length;
-            dataTable.page.len(info.recordsTotal).draw();
-            setTimeout(excelAll, 1000);
-        });
-        function excelAll() {
-            $(".buttons-excel")[0].click();
-            setTimeout(pagelengthfn, 1000);
-        }
+    function pagelengthfn() {
+        dataTable.page.len(pageLength).draw();
+    }
 
-        function createStudent() {
-            $.get("/Student/Create", { operation: "Add" }, function (res) {
-                $('#dataModalBody').html(res);
-                document.getElementById("dob").type = "date";
-                $('#dob').keypress(function (event) {
-                    event.preventDefault();
-                    return false;
-                });
-                $('#reg').attr('readonly', false);
-                document.getElementById("ViewModalLabel").innerHTML = "CREATE STUDENT"
-                $("#btnSave").show();
-                $("#btnEdit").hide();
-                $('#dataModal').modal('show');
-                $("#gradeDiv").hide();
-                console.log(info.recordsTotal);
-                btnEdit.style.visibility = 'hidden';
-                var div = document.getElementById("gradeDiv");
-                if (div.style.display !== "none") {
-                    div.style.display = "none";
-                }
-                else {
-                    div.style.display = "block";
-                }
-            })
-        }
 
-        function getStudent(id) {
-            $.get("/Student/Edit", { operation: "View", id: id }, function (res) {
-                $('#dataModalBody').html(res);
-                $('#dob').keypress(function (event) {
-                    event.preventDefault();
-                    return false;
-                });
-                $('#dataModal').modal('show');
-            })
-        }
+    $(document).on('click', '#btnExcel', function () {
+        var info = dataTable.page.info();
+        pageLength = info.length;
+        dataTable.page.len(info.recordsTotal).draw();
+        setTimeout(excelAll, 1000);
+    });
+    function excelAll() {
+        $(".buttons-excel")[0].click();
+        setTimeout(pagelengthfn, 1000);
+    }
 
-        function editGetStudent(id) {
-            $.get("/Student/Edit", { operation: "Edit", id: id }, function (res) {
-                $('#dataModalBody').html(res);
-                $("#btnUpdateSave").show();
-                $('#dob').keypress(function (event) {
-                    event.preventDefault();
-                    return false;
-                });
-                $('#reg').keypress(function (event) {
-                    event.preventDefault();
-                    return false;
-                });
-                btnEdit.style.visibility = 'hidden';
-                var div = document.getElementById("gradeDiv");
-                if (div.style.display !== "none") {
-                    div.style.display = "none";
-                }
-                else {
-                    div.style.display = "block";
-                }
-
-                document.getElementById("ViewModalLabel").innerHTML = "EDIT STUDENT";
-                $('#dataModal').modal('show');
-            })
-        }
-
-        function Delete(id) {
-            $.get("/Student/Delete", { id: id }, function (res) {
-                if (res) {
-                    $('#dataModalBody').html(res);
-                    $('#dataModal').modal('show');
-                    dataTable.ajax.reload();
-                }
-            })
-        }
-        
-        function PrintAll() {
-            $.get("/Student/Print", function (res) {
-                if (res) {
-                    $('#ModalBodyPrint').html(res);
-                    $('#dataModalPrint').modal('show');
-
-                }
+    function createStudent() {
+        $.get("/Student/Create", { operation: "Add" }, function (res) {
+            $('#dataModalBody').html(res);
+            document.getElementById("dob").type = "date";
+            $('#dob').keypress(function (event) {
+                event.preventDefault();
+                return false;
             });
-            setTimeout(getprint, 1000)
-        }
-        function getprint() {
-            window.frames["print_frame"].window.focus();
-            window.frames["print_frame"].window.print();
-        }
+            $('#reg').attr('readonly', false);
+            document.getElementById("ViewModalLabel").innerHTML = "CREATE STUDENT"
+            $("#btnSave").show();
+            $("#btnEdit").hide();
+            $('#dataModal').modal('show');
+            $("#gradeDiv").hide();
+            console.log(info.recordsTotal);
+            btnEdit.style.visibility = 'hidden';
+            var div = document.getElementById("gradeDiv");
+            if (div.style.display !== "none") {
+                div.style.display = "none";
+            }
+            else {
+                div.style.display = "block";
+            }
+        })
+    }
 
-        function ToPdf() {
-            $.get("/Student/Print", function (res) {
-                if (res) {
-                    $('#ModalBodyPrint').html(res);
-                    $('#dataModalPrint').modal('show');
-                }
-            })
-        }
+    function getStudent(id) {
+        $.get("/Student/Edit", { operation: "View", id: id }, function (res) {
+            $('#dataModalBody').html(res);
+            $('#dob').keypress(function (event) {
+                event.preventDefault();
+                return false;
+            });
+            $('#dataModal').modal('show');
+        })
+    }
 
-       
-    </script>
+    function editGetStudent(id) {
+        $.get("/Student/Edit", { operation: "Edit", id: id }, function (res) {
+            $('#dataModalBody').html(res);
+            $("#btnUpdateSave").show();
+            $('#dob').keypress(function (event) {
+                event.preventDefault();
+                return false;
+            });
+            $('#reg').keypress(function (event) {
+                event.preventDefault();
+                return false;
+            });
+            btnEdit.style.visibility = 'hidden';
+            var div = document.getElementById("gradeDiv");
+            if (div.style.display !== "none") {
+                div.style.display = "none";
+            }
+            else {
+                div.style.display = "block";
+            }
+
+            document.getElementById("ViewModalLabel").innerHTML = "EDIT STUDENT";
+            $('#dataModal').modal('show');
+        })
+    }
+
+    function Delete(id) {
+        $.get("/Student/Delete", { id: id }, function (res) {
+            if (res) {
+                $('#dataModalBody').html(res);
+                $('#dataModal').modal('show');
+                dataTable.ajax.reload();
+            }
+        })
+    }
+
+    function PrintAll() {
+        $.get("/Student/Print", function (res) {
+            if (res) {
+                $('#ModalBodyPrint').html(res);
+                $('#dataModalPrint').modal('show');
+
+            }
+        });
+        setTimeout(getprint, 1000)
+    }
+    function getprint() {
+        window.frames["print_frame"].window.focus();
+        window.frames["print_frame"].window.print();
+    }
+
+    function ToPdf() {
+        $.get("/Student/Print", function (res) {
+            if (res) {
+                $('#ModalBodyPrint').html(res);
+                $('#dataModalPrint').modal('show');
+            }
+        })
+    }
+
+
+</script>
