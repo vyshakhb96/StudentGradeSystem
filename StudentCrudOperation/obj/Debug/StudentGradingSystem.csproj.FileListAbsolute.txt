@@ -421,8 +421,8 @@ C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\de\Mig
 C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\de\MigraDoc.RtfRendering-gdi.resources.dll
 C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\de\PdfSharp-gdi.resources.dll
 C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\de\PdfSharp.Charting-gdi.resources.dll
-C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\obj\Debug\StudentGradingSystem.csproj.AssemblyReference.cache
 C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\obj\Debug\StudentGradingSystem.csproj.CoreCompileInputs.cache
 C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\obj\Debug\StudentGradingSystem.csproj.CopyComplete
 C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\obj\Debug\StudentCrudOperation.dll
 C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\obj\Debug\StudentCrudOperation.pdb
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\obj\Debug\StudentGradingSystem.csproj.AssemblyReference.cache

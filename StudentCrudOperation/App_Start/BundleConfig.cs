@@ -13,7 +13,8 @@ using System.Web.Optimization;
                                  "~/Content/Site.css",
                                  "~/Style/StyleSheet.css",
                                  "~/Content/DataTables/css/jquery.dataTables.css",
-                                 "~/Content/toastr.min.css"
+                                 "~/Content/toastr.min.css",
+                                 "~/Content/DataTables/css/responsive.dataTables.min.css"
                                  );
 
             ScriptBundle myScriptBundle = new ScriptBundle("~/Scripts/MyScript");
@@ -28,7 +29,8 @@ using System.Web.Optimization;
                                     "~/Scripts/jszip.min.js",
                                     "~/Scripts/DataTables/dataTables.buttons.min.js",
                                     "~/Scripts/DataTables/buttons.html5.min.js",
-                                    "~/Scripts/DataTables/buttons.print.min.js"
+                                    "~/Scripts/DataTables/buttons.print.min.js",
+                                    "~/Scripts/DataTables/dataTables.responsive.min.js"
                                   );
 
 

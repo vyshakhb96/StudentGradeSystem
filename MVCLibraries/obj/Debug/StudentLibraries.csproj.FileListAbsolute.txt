@@ -198,7 +198,6 @@ C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\System.S
 C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\System.Security.Permissions.xml
 C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\System.Security.Principal.Windows.xml
 C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.Mvc.xml
-C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.Optimization.xml
 C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.WebPages.xml
 C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.WebPages.Razor.xml
 C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.Razor.xml
@@ -207,7 +206,6 @@ C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\MigraDoc
 C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\PdfSharp-gdi.xml
 C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\Newtonsoft.Json.xml
-C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\Antlr3.Runtime.pdb
 C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\PdfSharp.Charting-gdi.xml
 C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\de\MigraDoc.DocumentObjectModel-gdi.resources.dll
 C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\de\MigraDoc.Rendering-gdi.resources.dll
@@ -218,3 +216,5 @@ C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\obj\Debug\StudentL
 C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\obj\Debug\StudentLibraries.csproj.CopyComplete
 C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\obj\Debug\MVCLibraries.dll
 C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\obj\Debug\MVCLibraries.pdb
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.Helpers.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.Helpers.xml

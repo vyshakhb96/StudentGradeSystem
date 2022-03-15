@@ -36,7 +36,7 @@ input::-webkit-inner-spin-button {
 }*/
 
 .dataTables_scrollBody {
-    overflow-x:auto !important;
+    overflow-x:hidden !important;
     overflow-y:auto !important
 }
 
@@ -119,4 +119,11 @@ div.container {
 
 .glyphicon-trash:hover {
     transform: scale(1.2);
+}
+.glyphicon-plus-sign {
+    color: green;
+}
+
+.glyphicon-minus-sign {
+    color: red;
 }
