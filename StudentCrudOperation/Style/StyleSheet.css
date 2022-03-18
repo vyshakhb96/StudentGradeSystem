@@ -1,0 +1,129 @@
+﻿body {
+    background-color:lightgray;
+    background-image: url('../Images/bg3.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    padding-top:0px;
+}
+
+.space
+{
+/*    padding-left:35%;*/
+}
+
+.content-space{
+    display:flex;
+    justify-content:center;
+}
+
+.form-top{
+    margin-top:4%;
+}
+
+/*input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0;
+}
+
+.scrolls{*/
+/*    -ms-overflow-style:none;
+*//*}
+
+.scrolls::-webkit-scrollbar {
+    display: none;
+}*/
+
+.dataTables_scrollBody {
+    overflow-x:hidden !important;
+    overflow-y:auto !important
+}
+
+.footers {
+    position: fixed;
+    left: 0;
+    height:4%;
+    bottom: 0;
+    width: 100%;
+    background-color:lightgray ;
+    color: black;
+    text-align: center;
+   
+}
+
+.dt-buttons {
+    display: none;
+}
+
+.dataTables_length {
+    margin-top: 8px;
+    margin-left: 25px;
+}
+
+
+.dataTables_filter {
+margin-top:-25px;
+margin-bottom:15px;
+    margin-right: 20px;
+
+}
+
+a.red {
+    color: red ;
+}
+
+a.blue {
+    color: #50cbc6;
+}
+
+a.orenge {
+    color: green;
+    margin: 10%;
+   
+}
+a.red:hover {
+    cursor: pointer;  
+    color:crimson;
+}
+a.blue:hover {
+    cursor: pointer;
+    color:indigo;
+}
+a.orenge:hover {
+    cursor: pointer;
+    color:darkorange;
+}
+
+
+.glyphicon{
+    font-size:large;
+}
+
+.html, body {
+    margin: 0;
+    height: 100%;
+}
+
+div.container {
+    width: 90%;
+}
+
+.glyphicon-eye-open:hover{
+    transform:scale(1.2);
+}
+
+.glyphicon-edit:hover {
+    transform: scale(1.2);
+}
+
+.glyphicon-trash:hover {
+    transform: scale(1.2);
+}
+.glyphicon-plus-sign {
+    color: green;
+}
+
+.glyphicon-minus-sign {
+    color: red;
+}

@@ -1,0 +1,293 @@
+﻿@model StudentCrudOperation.Models.User
+@using StudentLibraries.Enum;
+
+
+<form id="userDemo" name="userForm">
+
+    <div class="modal-header">
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span style="color:black" aria-hidden="true">&times;</span>
+        </button>
+
+        <h3 class="modal-title" style="display:flex; justify-content:center" id="ViewModalLabel">USER DETAILS</h3>
+
+
+    </div>
+    <div>
+        <div class="modal-body">
+            <span class="alert-danger">
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            </span>
+
+            @Html.HiddenFor(model => model.Id)
+            <div class="form-group form-top">
+                @Html.LabelFor(model => model.UserName, "User Name", htmlAttributes: new { @class = "control-label col-md-4" })
+                <div class="space">
+                    @Html.EditorFor(model => model.UserName, new { htmlAttributes = new {@class = "form-control", @onkeyup = "validateReg()", @Id = "reg", @max = "50000" } })
+                    @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger", @id = "regSpan", @style = "position:absolute" })
+                </div>
+            </div>
+
+            <div class="form-group form-top">
+                @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-4" })
+                <div class="space">
+                    @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", @onkeyup = "validateName()", @Id = "username" } })
+                    @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger", @Id = "spanName", @style = "position:absolute" })
+                </div>
+            </div>
+
+            <div class="form-group form-top">
+                @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-4" })
+                <div class="space">
+                    @Html.EditorFor(model => model.Password, new { htmlAttributes = new {@class = "form-control", @Id = "password" } })
+                    @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger", @Id = "spanDob", @style = "position:absolute" })
+                </div>
+
+            </div>
+
+            
+
+           
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" id="btnEdit" style="width:12%;border:none" class="btn btn-warning" onclick="Enable()"> Edit </button>
+        <button type="button" id="btnSave" style="display: none;border:none" class="btn btn-success" onclick="AddStudent()">Save</button>
+        <button type="button" id="btnUpdateSave" style="display:none;border:none" class="btn btn-success" onclick="UpdateStudent()">Save</button>
+        <button type="button" style="border: none; margin-right: 25px;" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    </div>
+
+</form>
+
+<script>
+
+    function AddStudent() {
+        var modal = $("#userModal");
+        var form = $('form[name="userForm"]');
+        
+        var data = form.serialize();
+        $.post("/User/Create", data, function (res) {
+            if (res) {
+                toastr.options = {
+                    "closeButton": true,
+                    "newestOnTop": false,
+                    "progressBar": true,
+                    "positionClass": "toast-bottom-right",
+                    "preventDuplicates": false,
+                    "onclick": null,
+                    "showDuration": "200",
+                    "hideDuration": "1000",
+                    "timeOut": "3000",
+                    "extendedTimeOut": "1000",
+                    "showEasing": "swing",
+                    "hideEasing": "linear",
+                    "showMethod": "fadeIn",
+                    "hideMethod": "fadeOut"
+                }
+                toastr["success"]("Student Added successfully!")
+
+                modal.modal('hide');
+                dataTable.ajax.reload();
+            }
+        })
+    }
+
+    @*function UpdateStudent() {
+        var modal = $("#dataModal");
+        var form = $('form[name="dataForm"]');
+        validateReg();
+        validateName();
+        validateDob();
+        validateStandard();
+        validateMaths();
+        validatePhysics();
+        validateChemistry();
+
+        var data = form.serialize();
+        $.post("/Student/Edit", data, function (res) {
+            if (res) {
+
+                toastr.options = {
+                    "closeButton": true,
+                    "newestOnTop": false,
+                    "progressBar": true,
+                    "positionClass": "toast-bottom-right",
+                    "preventDuplicates": false,
+                    "onclick": null,
+                    "showDuration": "200",
+                    "hideDuration": "1000",
+                    "timeOut": "3000",
+                    "extendedTimeOut": "1000",
+                    "showEasing": "swing",
+                    "hideEasing": "linear",
+                    "showMethod": "fadeIn",
+                    "hideMethod": "fadeOut"
+                }
+                toastr["success"]("Student updated successfully!")
+
+                modal.modal('hide');
+                dataTable.ajax.reload(null, false);
+            }
+        })
+    }
+
+    function Enable() {
+        $('.form-control').attr('disabled', false);
+        btnEdit.style.visibility = 'hidden';
+        //$('#reg').attr('disabled', true);
+        $("#btnUpdateSave").show();
+        document.getElementById("ViewModalLabel").innerHTML = "EDIT STUDENT";
+    }
+
+    $(document).ready(function ()
+    {
+
+        $("#Standard").val('@Model.Standard');
+        var today = '@DateTime.Today.ToString("MM/dd/yyyy")';
+
+        var date = new Date();
+        var year = date.getFullYear();
+        var dayBeforeDate = date.setFullYear(year - 17);
+        var requiredDate = new Date(dayBeforeDate).toISOString().slice(0, 10);
+
+        console.log(requiredDate)
+        $('#dob').attr('max', requiredDate);
+
+        var operation = '@Model.ActionType.ToString()';
+        console.log(operation);
+        if (operation == '@Operations.Add') {
+            $('.form-control').attr('disabled', false);
+            $("#dob").val("");
+        }
+        else if (operation == '@Operations.Edit')
+        {
+            $('.form-control').attr('disabled', false);
+        }
+        else if (operation == '@Operations.View')
+        {
+            $('.form-control').attr('disabled', true);
+
+        }
+        else {
+            $('.form-control').attr('disabled', true);
+        }
+
+    });
+    $("#Standard").change(function () {
+        var stud = $("#Standard").val();
+        $("#Standard").val(stud);
+    });
+
+    function validateReg() {
+        var regnum = $("#reg").val();
+        if (regnum < 100 || regnum > 50000) {
+            document.getElementById("regSpan").textContent = "Enter correct register number";
+            return false;
+        } else if (regnum == "") {
+            document.getElementById("regSpan").textContent = "Please enter register number";
+            return false;
+        } else if (document.dataForm.reg.value.length == "") {
+            document.getElementById("regSpan").textContent = "Please enter register number";
+            return false;
+        } else {
+            document.getElementById("regSpan").textContent = "";
+        }
+    }
+
+    function validateName() {
+        var name = document.getElementById("name").value;
+        const specialChars = /^[A-z a-z]+$/;
+        if (name == "") {
+            document.getElementById("spanName").textContent = "Name is required";
+            return false;
+        } else if (!$("#name").val().match(specialChars)) {
+            document.getElementById("spanName").textContent = "Enter proper name";
+        } else if (!isNaN(name)) {
+            document.getElementById("spanName").textContent = "Enter proper name";
+            return false;
+        } else if (document.dataForm.name.value.length > 15) {
+            document.getElementById("spanName").textContent = "Name length is too large";
+            return false;
+        } else if (document.dataForm.name.value.length < 3) {
+            document.getElementById("spanName").textContent = "Name length is too small";
+        } else if (document.dataForm.name.value.length > 0) {
+            document.getElementById("spanName").textContent = "";
+        }
+        else {
+            document.getElementById("spanName").textContent = "";
+        }
+    }
+
+    function validateDob() {
+        var dateOfBirth = document.getElementById("dob").value;
+        if (dateOfBirth == "") {
+            document.getElementById("spanDob").textContent = "Date of birth is required";
+            return false;
+        } else {
+            document.getElementById("spanDob").textContent = "";
+        }
+    }
+
+    function validateStandard() {
+        var standard = $("#Standard").val();
+        if (standard.length <= 0) {
+            document.getElementById("spanStandard").textContent = "Please select a standard";
+            return false;
+        } else {
+            document.getElementById("spanStandard").textContent = "";
+        }
+    }
+
+    function validateMaths() {
+        var Maths = $("#maths").val();
+
+        if (Maths > 100 || Maths < 0) {
+            document.getElementById("spanMaths").textContent = "Enter marks less than or equal to 100";
+            return false;
+        } else if (Maths == "") {
+            document.getElementById("spanMaths").textContent = "Please enter marks";
+            return false;
+        } else if (document.dataForm.maths.value.length == "") {
+            document.getElementById("spanMaths").textContent = "Please enter marks";
+            return false;
+        } else {
+            document.getElementById("spanMaths").textContent = "";
+        }
+
+    }
+
+    function validatePhysics() {
+        var Phy = $("#physics").val();
+        if (Phy > 100 || Phy < 0) {
+            document.getElementById("spanPhysics").textContent = "Enter marks less than or equal to 100";
+            return false;
+        } else if (Phy == "") {
+            document.getElementById("spanPhysics").textContent = "Please enter marks";
+            return false;
+        } else if (document.dataForm.physics.value.length == "") {
+            document.getElementById("spanPhysics").textContent = "Please enter marks";
+            return false;
+        } else {
+            document.getElementById("spanPhysics").textContent = "";
+        }
+    }
+
+    function validateChemistry() {
+        var Che = $("#chemistry").val();
+        if (Che > 100 || Che < 0) {
+            document.getElementById("spanChemistry").textContent = "Enter marks less than or equal to 100";
+            return false;
+        } else if (Che == "") {
+            document.getElementById("spanChemistry").textContent = "Please enter marks";
+            return false;
+        } else if (document.dataForm.chemistry.value.length == "") {
+            document.getElementById("spanChemistry").textContent = "Please enter marks";
+            return false;
+        } else {
+            document.getElementById("spanChemistry").textContent = "";
+        }
+    }*@
+
+</script>
+

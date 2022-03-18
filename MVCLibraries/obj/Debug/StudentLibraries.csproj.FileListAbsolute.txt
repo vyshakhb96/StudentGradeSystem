@@ -1,0 +1,309 @@
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\MVCLibraries\bin\Debug\MVCLibraries.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\MVCLibraries\bin\Debug\MVCLibraries.pdb
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\MVCLibraries\bin\Debug\System.ComponentModel.Annotations.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\MVCLibraries\bin\Debug\System.Configuration.ConfigurationManager.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\MVCLibraries\bin\Debug\System.Data.SqlClient.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\MVCLibraries\bin\Debug\System.Security.AccessControl.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\MVCLibraries\bin\Debug\System.Security.Permissions.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\MVCLibraries\bin\Debug\System.Security.Principal.Windows.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\MVCLibraries\bin\Debug\System.Configuration.ConfigurationManager.xml
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\MVCLibraries\bin\Debug\System.Data.SqlClient.xml
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\MVCLibraries\bin\Debug\System.Security.AccessControl.xml
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\MVCLibraries\bin\Debug\System.Security.Permissions.xml
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\MVCLibraries\bin\Debug\System.Security.Principal.Windows.xml
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\MVCLibraries\obj\Debug\StudentLibraries.csproj.CoreCompileInputs.cache
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\MVCLibraries\obj\Debug\StudentLibraries.csproj.CopyComplete
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\MVCLibraries\obj\Debug\MVCLibraries.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\MVCLibraries\obj\Debug\MVCLibraries.pdb
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\MVCLibraries\obj\Debug\StudentLibraries.csproj.AssemblyReference.cache
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\MVCLibraries\bin\Debug\StudentCrudOperation.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\MVCLibraries\bin\Debug\System.Web.Mvc.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\MVCLibraries\bin\Debug\System.Linq.Dynamic.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\MVCLibraries\bin\Debug\System.Web.WebPages.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\MVCLibraries\bin\Debug\System.Web.WebPages.Razor.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\MVCLibraries\bin\Debug\System.Web.Razor.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\MVCLibraries\bin\Debug\Microsoft.Web.Infrastructure.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\MVCLibraries\bin\Debug\System.Web.WebPages.Deployment.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\MVCLibraries\bin\Debug\StudentCrudOperation.pdb
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\MVCLibraries\bin\Debug\StudentCrudOperation.dll.config
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\MVCLibraries\bin\Debug\System.Web.Mvc.xml
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\MVCLibraries\bin\Debug\System.Web.WebPages.xml
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\MVCLibraries\bin\Debug\System.Web.WebPages.Razor.xml
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\MVCLibraries\bin\Debug\System.Web.Razor.xml
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\MVCLibraries\bin\Debug\System.Web.WebPages.Deployment.xml
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\MVCLibraries\bin\Debug\MVCLibraries.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\MVCLibraries\bin\Debug\MVCLibraries.pdb
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\MVCLibraries\bin\Debug\StudentCrudOperation.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\MVCLibraries\bin\Debug\System.ComponentModel.Annotations.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\MVCLibraries\bin\Debug\System.Configuration.ConfigurationManager.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\MVCLibraries\bin\Debug\System.Data.SqlClient.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\MVCLibraries\bin\Debug\System.Security.AccessControl.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\MVCLibraries\bin\Debug\System.Security.Permissions.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\MVCLibraries\bin\Debug\System.Security.Principal.Windows.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\MVCLibraries\bin\Debug\System.Web.Mvc.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\MVCLibraries\bin\Debug\System.Web.WebPages.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\MVCLibraries\bin\Debug\System.Web.WebPages.Razor.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\MVCLibraries\bin\Debug\System.Web.Razor.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\MVCLibraries\bin\Debug\Microsoft.Web.Infrastructure.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\MVCLibraries\bin\Debug\System.Web.WebPages.Deployment.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\MVCLibraries\bin\Debug\StudentCrudOperation.pdb
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\MVCLibraries\bin\Debug\StudentCrudOperation.dll.config
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\MVCLibraries\bin\Debug\System.Configuration.ConfigurationManager.xml
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\MVCLibraries\bin\Debug\System.Data.SqlClient.xml
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\MVCLibraries\bin\Debug\System.Security.AccessControl.xml
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\MVCLibraries\bin\Debug\System.Security.Permissions.xml
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\MVCLibraries\bin\Debug\System.Security.Principal.Windows.xml
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\MVCLibraries\bin\Debug\System.Web.Mvc.xml
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\MVCLibraries\bin\Debug\System.Web.WebPages.xml
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\MVCLibraries\bin\Debug\System.Web.WebPages.Razor.xml
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\MVCLibraries\bin\Debug\System.Web.Razor.xml
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\MVCLibraries\bin\Debug\System.Web.WebPages.Deployment.xml
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\MVCLibraries\obj\Debug\StudentLibraries.csproj.AssemblyReference.cache
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\MVCLibraries\obj\Debug\StudentLibraries.csproj.CoreCompileInputs.cache
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\MVCLibraries\obj\Debug\StudentLibraries.csproj.CopyComplete
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\MVCLibraries\obj\Debug\MVCLibraries.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\MVCLibraries\obj\Debug\MVCLibraries.pdb
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\MVCLibraries\bin\Debug\System.Linq.Dynamic.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\MVCLibraries\bin\Debug\MVCLibraries.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\MVCLibraries\bin\Debug\MVCLibraries.pdb
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\MVCLibraries\bin\Debug\StudentCrudOperation.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\MVCLibraries\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\MVCLibraries\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\MVCLibraries\bin\Debug\System.Data.SqlClient.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\MVCLibraries\bin\Debug\System.Security.AccessControl.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\MVCLibraries\bin\Debug\System.Security.Permissions.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\MVCLibraries\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.Mvc.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\MVCLibraries\bin\Debug\System.Linq.Dynamic.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\MVCLibraries\bin\Debug\ArrayToPdf.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.WebPages.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.Razor.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\MVCLibraries\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\MVCLibraries\bin\Debug\MigraDoc.DocumentObjectModel-gdi.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\MVCLibraries\bin\Debug\MigraDoc.Rendering-gdi.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\MVCLibraries\bin\Debug\PdfSharp-gdi.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\MVCLibraries\bin\Debug\PdfSharp.Charting-gdi.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\MVCLibraries\bin\Debug\StudentCrudOperation.pdb
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\MVCLibraries\bin\Debug\StudentCrudOperation.dll.config
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\MVCLibraries\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\MVCLibraries\bin\Debug\System.Data.SqlClient.xml
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\MVCLibraries\bin\Debug\System.Security.AccessControl.xml
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\MVCLibraries\bin\Debug\System.Security.Permissions.xml
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\MVCLibraries\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.Mvc.xml
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.WebPages.xml
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.Razor.xml
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\MVCLibraries\bin\Debug\MigraDoc.DocumentObjectModel-gdi.xml
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\MVCLibraries\bin\Debug\MigraDoc.Rendering-gdi.xml
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\MVCLibraries\bin\Debug\PdfSharp-gdi.xml
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\MVCLibraries\bin\Debug\PdfSharp.Charting-gdi.xml
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\MVCLibraries\bin\Debug\de\MigraDoc.DocumentObjectModel-gdi.resources.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\MVCLibraries\bin\Debug\de\MigraDoc.Rendering-gdi.resources.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\MVCLibraries\bin\Debug\de\PdfSharp-gdi.resources.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\MVCLibraries\bin\Debug\de\PdfSharp.Charting-gdi.resources.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\MVCLibraries\obj\Debug\StudentLibraries.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\MVCLibraries\obj\Debug\StudentLibraries.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\MVCLibraries\obj\Debug\StudentLibraries.csproj.CopyComplete
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\MVCLibraries\obj\Debug\MVCLibraries.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\MVCLibraries\obj\Debug\MVCLibraries.pdb
+D:\Vyshakh_Project\MVCLibraries\bin\Debug\MVCLibraries.dll.config
+D:\Vyshakh_Project\MVCLibraries\bin\Debug\MVCLibraries.dll
+D:\Vyshakh_Project\MVCLibraries\bin\Debug\MVCLibraries.pdb
+D:\Vyshakh_Project\MVCLibraries\bin\Debug\StudentCrudOperation.dll
+D:\Vyshakh_Project\MVCLibraries\bin\Debug\System.ComponentModel.Annotations.dll
+D:\Vyshakh_Project\MVCLibraries\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\Vyshakh_Project\MVCLibraries\bin\Debug\System.Data.SqlClient.dll
+D:\Vyshakh_Project\MVCLibraries\bin\Debug\System.Security.AccessControl.dll
+D:\Vyshakh_Project\MVCLibraries\bin\Debug\System.Security.Permissions.dll
+D:\Vyshakh_Project\MVCLibraries\bin\Debug\System.Security.Principal.Windows.dll
+D:\Vyshakh_Project\MVCLibraries\bin\Debug\System.Web.Mvc.dll
+D:\Vyshakh_Project\MVCLibraries\bin\Debug\System.Web.Optimization.dll
+D:\Vyshakh_Project\MVCLibraries\bin\Debug\System.Linq.Dynamic.dll
+D:\Vyshakh_Project\MVCLibraries\bin\Debug\ArrayToPdf.dll
+D:\Vyshakh_Project\MVCLibraries\bin\Debug\System.Web.WebPages.dll
+D:\Vyshakh_Project\MVCLibraries\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Vyshakh_Project\MVCLibraries\bin\Debug\System.Web.Razor.dll
+D:\Vyshakh_Project\MVCLibraries\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Vyshakh_Project\MVCLibraries\bin\Debug\WebGrease.dll
+D:\Vyshakh_Project\MVCLibraries\bin\Debug\MigraDoc.DocumentObjectModel-gdi.dll
+D:\Vyshakh_Project\MVCLibraries\bin\Debug\MigraDoc.Rendering-gdi.dll
+D:\Vyshakh_Project\MVCLibraries\bin\Debug\PdfSharp-gdi.dll
+D:\Vyshakh_Project\MVCLibraries\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Vyshakh_Project\MVCLibraries\bin\Debug\Newtonsoft.Json.dll
+D:\Vyshakh_Project\MVCLibraries\bin\Debug\Antlr3.Runtime.dll
+D:\Vyshakh_Project\MVCLibraries\bin\Debug\PdfSharp.Charting-gdi.dll
+D:\Vyshakh_Project\MVCLibraries\bin\Debug\StudentCrudOperation.pdb
+D:\Vyshakh_Project\MVCLibraries\bin\Debug\StudentCrudOperation.dll.config
+D:\Vyshakh_Project\MVCLibraries\bin\Debug\System.Configuration.ConfigurationManager.xml
+D:\Vyshakh_Project\MVCLibraries\bin\Debug\System.Data.SqlClient.xml
+D:\Vyshakh_Project\MVCLibraries\bin\Debug\System.Security.AccessControl.xml
+D:\Vyshakh_Project\MVCLibraries\bin\Debug\System.Security.Permissions.xml
+D:\Vyshakh_Project\MVCLibraries\bin\Debug\System.Security.Principal.Windows.xml
+D:\Vyshakh_Project\MVCLibraries\bin\Debug\System.Web.Mvc.xml
+D:\Vyshakh_Project\MVCLibraries\bin\Debug\System.Web.Optimization.xml
+D:\Vyshakh_Project\MVCLibraries\bin\Debug\System.Web.WebPages.xml
+D:\Vyshakh_Project\MVCLibraries\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Vyshakh_Project\MVCLibraries\bin\Debug\System.Web.Razor.xml
+D:\Vyshakh_Project\MVCLibraries\bin\Debug\MigraDoc.DocumentObjectModel-gdi.xml
+D:\Vyshakh_Project\MVCLibraries\bin\Debug\MigraDoc.Rendering-gdi.xml
+D:\Vyshakh_Project\MVCLibraries\bin\Debug\PdfSharp-gdi.xml
+D:\Vyshakh_Project\MVCLibraries\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Vyshakh_Project\MVCLibraries\bin\Debug\Newtonsoft.Json.xml
+D:\Vyshakh_Project\MVCLibraries\bin\Debug\Antlr3.Runtime.pdb
+D:\Vyshakh_Project\MVCLibraries\bin\Debug\PdfSharp.Charting-gdi.xml
+D:\Vyshakh_Project\MVCLibraries\bin\Debug\de\MigraDoc.DocumentObjectModel-gdi.resources.dll
+D:\Vyshakh_Project\MVCLibraries\bin\Debug\de\MigraDoc.Rendering-gdi.resources.dll
+D:\Vyshakh_Project\MVCLibraries\bin\Debug\de\PdfSharp-gdi.resources.dll
+D:\Vyshakh_Project\MVCLibraries\bin\Debug\de\PdfSharp.Charting-gdi.resources.dll
+D:\Vyshakh_Project\MVCLibraries\obj\Debug\StudentLibraries.csproj.AssemblyReference.cache
+D:\Vyshakh_Project\MVCLibraries\obj\Debug\StudentLibraries.csproj.CoreCompileInputs.cache
+D:\Vyshakh_Project\MVCLibraries\obj\Debug\StudentLibraries.csproj.CopyComplete
+D:\Vyshakh_Project\MVCLibraries\obj\Debug\MVCLibraries.dll
+D:\Vyshakh_Project\MVCLibraries\obj\Debug\MVCLibraries.pdb
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\MVCLibraries.dll.config
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\MVCLibraries.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\MVCLibraries.pdb
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\StudentCrudOperation.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\System.Data.SqlClient.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\System.Security.AccessControl.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\System.Security.Permissions.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.Mvc.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.Optimization.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\System.Linq.Dynamic.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\ArrayToPdf.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.WebPages.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.Razor.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\WebGrease.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\MigraDoc.DocumentObjectModel-gdi.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\MigraDoc.Rendering-gdi.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\PdfSharp-gdi.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\Newtonsoft.Json.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\Antlr3.Runtime.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\PdfSharp.Charting-gdi.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\StudentCrudOperation.pdb
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\StudentCrudOperation.dll.config
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\System.Data.SqlClient.xml
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\System.Security.AccessControl.xml
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\System.Security.Permissions.xml
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.Mvc.xml
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.WebPages.xml
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.Razor.xml
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\MigraDoc.DocumentObjectModel-gdi.xml
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\MigraDoc.Rendering-gdi.xml
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\PdfSharp-gdi.xml
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\Newtonsoft.Json.xml
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\PdfSharp.Charting-gdi.xml
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\de\MigraDoc.DocumentObjectModel-gdi.resources.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\de\MigraDoc.Rendering-gdi.resources.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\de\PdfSharp-gdi.resources.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\de\PdfSharp.Charting-gdi.resources.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\obj\Debug\StudentLibraries.csproj.AssemblyReference.cache
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\obj\Debug\StudentLibraries.csproj.CoreCompileInputs.cache
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\obj\Debug\StudentLibraries.csproj.CopyComplete
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\obj\Debug\MVCLibraries.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\obj\Debug\MVCLibraries.pdb
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.Helpers.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.Helpers.xml
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\MVCLibraries.dll.config
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\MVCLibraries.dll
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\MVCLibraries.pdb
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\Antlr3.Runtime.dll
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\StudentCrudOperation.dll
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\System.ComponentModel.Annotations.dll
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\System.Data.SqlClient.dll
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\System.Security.AccessControl.dll
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\System.Security.Permissions.dll
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\System.Security.Principal.Windows.dll
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.Helpers.dll
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.Mvc.dll
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.Optimization.dll
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.Razor.dll
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.WebPages.dll
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.WebPages.Razor.dll
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\WebGrease.dll
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\System.Linq.Dynamic.dll
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\ArrayToPdf.dll
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\MigraDoc.DocumentObjectModel-gdi.dll
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\MigraDoc.Rendering-gdi.dll
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\PdfSharp-gdi.dll
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\Newtonsoft.Json.dll
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\PdfSharp.Charting-gdi.dll
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\StudentCrudOperation.pdb
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\StudentCrudOperation.dll.config
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\System.Configuration.ConfigurationManager.xml
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\System.Data.SqlClient.xml
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\System.Security.AccessControl.xml
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\System.Security.Permissions.xml
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\System.Security.Principal.Windows.xml
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.Helpers.xml
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.Mvc.xml
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.Razor.xml
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.WebPages.xml
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.WebPages.Razor.xml
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\MigraDoc.DocumentObjectModel-gdi.xml
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\MigraDoc.Rendering-gdi.xml
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\PdfSharp-gdi.xml
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\Newtonsoft.Json.xml
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\PdfSharp.Charting-gdi.xml
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\de\MigraDoc.DocumentObjectModel-gdi.resources.dll
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\de\MigraDoc.Rendering-gdi.resources.dll
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\de\PdfSharp-gdi.resources.dll
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\de\PdfSharp.Charting-gdi.resources.dll
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\obj\Debug\StudentLibraries.csproj.AssemblyReference.cache
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\obj\Debug\StudentLibraries.csproj.CoreCompileInputs.cache
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\obj\Debug\StudentLibraries.csproj.CopyComplete
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\obj\Debug\MVCLibraries.dll
+D:\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\obj\Debug\MVCLibraries.pdb
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\MVCLibraries.dll.config
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\MVCLibraries.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\MVCLibraries.pdb
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\Antlr3.Runtime.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\System.Data.SqlClient.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\System.Security.AccessControl.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\System.Security.Permissions.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.Helpers.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.Mvc.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.Optimization.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.Razor.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.WebPages.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\WebGrease.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\System.Data.SqlClient.xml
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\System.Security.AccessControl.xml
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\System.Security.Permissions.xml
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.Helpers.xml
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.Mvc.xml
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.Razor.xml
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.WebPages.xml
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\obj\Debug\StudentLibraries.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\obj\Debug\StudentLibraries.csproj.CopyComplete
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\obj\Debug\MVCLibraries.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\obj\Debug\MVCLibraries.pdb
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\MVCLibraries\obj\Debug\StudentLibraries.csproj.AssemblyReference.cache

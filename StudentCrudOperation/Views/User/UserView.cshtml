@@ -1,0 +1,113 @@
+﻿<div class="modal fade" id="createModal" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content" id="userModalBody">
+
+        </div>
+    </div>
+</div>
+
+<div style="float:left;">
+    <button type="button" style="height: 37px; border: none; margin-right: 5%;" class="btn btn-primary" onclick="createUser()">Create</button>
+</div>
+<table id="userTable" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+    <thead style="background-color: #1C2833; color: white">
+        <tr>
+            <th></th>
+            <th>Username</th>
+            <th>Email</th>
+
+            <th>Actions</th>
+        </tr>
+    </thead>
+</table>
+@section scripts{
+<script>
+
+    var userdataTable;
+    $(document).ready(function () {
+        userdataTable = $('#userTable').DataTable({
+            "ajax": {
+                url: "/User/GetUsers",
+                type: "POST",
+                dataType: "json",
+
+            },
+            columns: [
+                {
+                    "data": null,
+                    "width": "3%",
+                    "defaultContent": '<i onclick="myFunction(this)" class = "glyphicon glyphicon-plus-sign"> </ i>',
+                },
+                { 'data': 'UserName', 'name': "UserName" },
+                { 'data': 'Email', 'name': "Email" },
+                {
+                    'data': 'Id', 'render': function (data) {
+                        return '<a class="blue" title="View" onclick="getStudent(' + data + ')" > <span class="glyphicon glyphicon-eye-open"></span></a> <a class="orenge" title="Edit" onclick="editGetStudent(' + data + ')" > <span class="glyphicon glyphicon-edit"></span></a>  <a class="red" title="Delete"  onclick="Delete(' + data + ')"> <span class="glyphicon glyphicon-trash"></span></a>';
+                    }
+                }
+            ],
+
+            "serverSide": true,
+            "order": [1, "asc"],
+            "scrollY": "370px",
+            "scrollCollapse": false,
+            "processing": true,
+            "dom": '<"top"f>rt<"bottom"ilp><"clear">',
+            //"buttons": [{
+            //    extend: 'excel',
+            //    exportOptions: {
+            //        columns: [1, 2, 3, 4, 5, 6, 7, 8]
+            //    }
+            //},
+            //{
+            //    extend: 'pdf',
+            //    exportOptions: {
+            //        columns: [1, 2, 3, 4, 5, 6, 7, 8]
+            //    }
+            //},
+            //{
+            //    extend: 'print',
+            //    extend: 'print',
+            //    autoPrint: true,
+            //    exportOptions: {
+            //        columns: [1, 2, 3, 4, 5, 6, 7, 8]
+            //    }
+            //}],
+            responsive: {
+                details: {
+                    type: 'column'
+                }
+            },
+            "columnDefs": [
+                {
+
+                    className: 'dtr-control',
+                    orderable: false,
+                    targets: 0,
+                },
+                {
+                    'targets': [0],
+                    'orderable': false,
+                },
+
+
+
+            ],
+
+        });
+
+    });
+    function createUser() {
+        $.get("/User/Create", { operation: "Add" }, function (res) {
+            $('#userModalBody').html(res);
+
+            document.getElementById("ViewModalLabel").innerHTML = "CREATE USER"
+            $("#btnSave").show();
+            $("#btnEdit").hide();
+            $('#createModal').modal('show');
+            btnEdit.style.visibility = 'hidden';
+        })
+    }
+</script>
+} 
+

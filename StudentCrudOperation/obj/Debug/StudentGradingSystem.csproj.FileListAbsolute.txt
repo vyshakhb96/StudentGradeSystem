@@ -1,0 +1,619 @@
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\StudentCrudOperation.dll.config
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\StudentCrudOperation.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\StudentCrudOperation.pdb
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\roslyn\csc.exe
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\roslyn\csc.exe.config
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\roslyn\csc.rsp
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\roslyn\csi.exe
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\roslyn\csi.exe.config
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\roslyn\csi.rsp
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\roslyn\Microsoft.Managed.Core.targets
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\roslyn\Microsoft.Win32.Primitives.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\roslyn\System.AppContext.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\roslyn\System.Collections.Immutable.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\roslyn\System.Console.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\roslyn\System.Diagnostics.StackTrace.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\roslyn\System.Globalization.Calendars.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\roslyn\System.IO.Compression.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\roslyn\System.IO.Compression.ZipFile.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\roslyn\System.IO.FileSystem.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\roslyn\System.IO.FileSystem.Primitives.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\roslyn\System.Net.Http.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\roslyn\System.Net.Sockets.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\roslyn\System.Reflection.Metadata.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\roslyn\System.Security.Cryptography.Encoding.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\roslyn\System.Security.Cryptography.Primitives.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\roslyn\System.Text.Encoding.CodePages.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\roslyn\System.Threading.Tasks.Extensions.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\roslyn\System.ValueTuple.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\roslyn\System.Xml.ReaderWriter.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\roslyn\System.Xml.XmlDocument.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\roslyn\System.Xml.XPath.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\roslyn\System.Xml.XPath.XDocument.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\roslyn\vbc.exe
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\roslyn\vbc.exe.config
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\roslyn\vbc.rsp
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\roslyn\VBCSCompiler.exe
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\roslyn\VBCSCompiler.exe.config
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\Microsoft.Web.Infrastructure.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\System.Linq.Dynamic.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\System.Web.Helpers.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\System.Web.Mvc.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\System.Web.Razor.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\System.Web.Webpages.Deployment.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\System.Web.Webpages.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\System.Web.Webpages.Razor.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\MVCLibraries.pdb
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\System.Web.Razor.xml
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\System.Web.Webpages.xml
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\System.Web.Webpages.Deployment.xml
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\System.Web.Webpages.Razor.xml
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\System.Web.Helpers.xml
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\System.Web.Mvc.xml
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\obj\Debug\StudentGradingSystem.csproj.AssemblyReference.cache
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\obj\Debug\StudentGradingSystem.csproj.CoreCompileInputs.cache
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\obj\Debug\StudentGradingSystem.csproj.CopyComplete
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\obj\Debug\StudentCrudOperation.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\19-01-2022\StudentCrudOperation\obj\Debug\StudentCrudOperation.pdb
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\StudentCrudOperation.dll.config
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\StudentCrudOperation.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\StudentCrudOperation.pdb
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\roslyn\csc.exe
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\roslyn\csc.exe.config
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\roslyn\csc.rsp
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\roslyn\csi.exe
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\roslyn\csi.exe.config
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\roslyn\csi.rsp
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\roslyn\Microsoft.Managed.Core.targets
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\roslyn\Microsoft.Win32.Primitives.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\roslyn\System.AppContext.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\roslyn\System.Collections.Immutable.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\roslyn\System.Console.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\roslyn\System.Diagnostics.StackTrace.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\roslyn\System.Globalization.Calendars.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\roslyn\System.IO.Compression.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\roslyn\System.IO.Compression.ZipFile.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\roslyn\System.IO.FileSystem.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\roslyn\System.IO.FileSystem.Primitives.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\roslyn\System.Net.Http.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\roslyn\System.Net.Sockets.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\roslyn\System.Reflection.Metadata.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\roslyn\System.Security.Cryptography.Encoding.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\roslyn\System.Security.Cryptography.Primitives.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\roslyn\System.Text.Encoding.CodePages.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\roslyn\System.Threading.Tasks.Extensions.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\roslyn\System.ValueTuple.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\roslyn\System.Xml.ReaderWriter.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\roslyn\System.Xml.XmlDocument.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\roslyn\System.Xml.XPath.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\roslyn\System.Xml.XPath.XDocument.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\roslyn\vbc.exe
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\roslyn\vbc.exe.config
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\roslyn\vbc.rsp
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\roslyn\VBCSCompiler.exe
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\roslyn\VBCSCompiler.exe.config
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\Microsoft.Web.Infrastructure.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\System.Linq.Dynamic.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\System.Web.Helpers.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\System.Web.Mvc.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\System.Web.Razor.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\System.Web.Webpages.Deployment.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\System.Web.Webpages.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\System.Web.Webpages.Razor.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\System.Web.Razor.xml
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\System.Web.Webpages.xml
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\System.Web.Webpages.Deployment.xml
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\System.Web.Webpages.Razor.xml
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\System.Web.Helpers.xml
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\System.Web.Mvc.xml
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\obj\Debug\StudentGradingSystem.csproj.CoreCompileInputs.cache
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\obj\Debug\StudentGradingSystem.csproj.CopyComplete
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\obj\Debug\StudentCrudOperation.dll
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\obj\Debug\StudentCrudOperation.pdb
+G:\project-ust-05-12-2021\backup-studentCrudOperations\21-01-2022\StudentCrudOperation\obj\Debug\StudentGradingSystem.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\StudentCrudOperation.dll.config
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\StudentCrudOperation.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\StudentCrudOperation.pdb
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\roslyn\csc.exe
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\roslyn\csc.exe.config
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\roslyn\csc.rsp
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\roslyn\csi.exe
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\roslyn\csi.exe.config
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\roslyn\csi.rsp
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.AppContext.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Console.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.IO.Compression.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Net.Http.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Net.Sockets.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.ValueTuple.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Xml.XPath.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\roslyn\vbc.exe
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\roslyn\vbc.exe.config
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\roslyn\vbc.rsp
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\roslyn\VBCSCompiler.exe
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\ArrayToPdf.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\MigraDoc.DocumentObjectModel-gdi.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\MigraDoc.Rendering-gdi.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\MigraDoc.RtfRendering-gdi.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\PdfSharp-gdi.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\PdfSharp.Charting-gdi.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\System.Linq.Dynamic.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Helpers.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Mvc.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Razor.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Webpages.Deployment.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Webpages.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Webpages.Razor.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\MigraDoc.DocumentObjectModel-gdi.xml
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\MigraDoc.Rendering-gdi.xml
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\MigraDoc.RtfRendering-gdi.xml
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\PdfSharp-gdi.xml
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\PdfSharp.Charting-gdi.xml
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Razor.xml
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Webpages.xml
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Webpages.Deployment.xml
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Webpages.Razor.xml
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Helpers.xml
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Mvc.xml
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\de\MigraDoc.DocumentObjectModel-gdi.resources.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\de\MigraDoc.Rendering-gdi.resources.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\de\MigraDoc.RtfRendering-gdi.resources.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\de\PdfSharp-gdi.resources.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\bin\de\PdfSharp.Charting-gdi.resources.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\obj\Debug\StudentGradingSystem.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\obj\Debug\StudentGradingSystem.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\obj\Debug\StudentGradingSystem.csproj.CopyComplete
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\obj\Debug\StudentCrudOperation.dll
+C:\Users\user\source\repos\Student Grade App\StudentGradeSystem\StudentCrudOperation\obj\Debug\StudentCrudOperation.pdb
+D:\Vyshakh_Project\StudentCrudOperation\bin\StudentCrudOperation.dll.config
+D:\Vyshakh_Project\StudentCrudOperation\bin\StudentCrudOperation.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\StudentCrudOperation.pdb
+D:\Vyshakh_Project\StudentCrudOperation\bin\roslyn\csc.exe
+D:\Vyshakh_Project\StudentCrudOperation\bin\roslyn\csc.exe.config
+D:\Vyshakh_Project\StudentCrudOperation\bin\roslyn\csc.rsp
+D:\Vyshakh_Project\StudentCrudOperation\bin\roslyn\csi.exe
+D:\Vyshakh_Project\StudentCrudOperation\bin\roslyn\csi.exe.config
+D:\Vyshakh_Project\StudentCrudOperation\bin\roslyn\csi.rsp
+D:\Vyshakh_Project\StudentCrudOperation\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Vyshakh_Project\StudentCrudOperation\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Vyshakh_Project\StudentCrudOperation\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Vyshakh_Project\StudentCrudOperation\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\roslyn\System.AppContext.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\roslyn\System.Collections.Immutable.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\roslyn\System.Console.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\roslyn\System.Globalization.Calendars.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\roslyn\System.IO.Compression.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\roslyn\System.IO.FileSystem.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\roslyn\System.Net.Http.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\roslyn\System.Net.Sockets.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\roslyn\System.Reflection.Metadata.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\roslyn\System.ValueTuple.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\roslyn\System.Xml.XPath.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\roslyn\vbc.exe
+D:\Vyshakh_Project\StudentCrudOperation\bin\roslyn\vbc.exe.config
+D:\Vyshakh_Project\StudentCrudOperation\bin\roslyn\vbc.rsp
+D:\Vyshakh_Project\StudentCrudOperation\bin\roslyn\VBCSCompiler.exe
+D:\Vyshakh_Project\StudentCrudOperation\bin\roslyn\VBCSCompiler.exe.config
+D:\Vyshakh_Project\StudentCrudOperation\bin\Antlr3.Runtime.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\ArrayToPdf.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\Microsoft.Web.Infrastructure.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\MigraDoc.DocumentObjectModel-gdi.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\MigraDoc.Rendering-gdi.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\MigraDoc.RtfRendering-gdi.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\Newtonsoft.Json.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\PdfSharp-gdi.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\PdfSharp.Charting-gdi.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\System.Linq.Dynamic.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\System.Web.Helpers.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\System.Web.Mvc.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\System.Web.Optimization.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\System.Web.Razor.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\System.Web.Webpages.Deployment.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\System.Web.Webpages.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\System.Web.Webpages.Razor.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\WebGrease.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\Antlr3.Runtime.pdb
+D:\Vyshakh_Project\StudentCrudOperation\bin\MigraDoc.DocumentObjectModel-gdi.xml
+D:\Vyshakh_Project\StudentCrudOperation\bin\MigraDoc.Rendering-gdi.xml
+D:\Vyshakh_Project\StudentCrudOperation\bin\MigraDoc.RtfRendering-gdi.xml
+D:\Vyshakh_Project\StudentCrudOperation\bin\Newtonsoft.Json.xml
+D:\Vyshakh_Project\StudentCrudOperation\bin\PdfSharp-gdi.xml
+D:\Vyshakh_Project\StudentCrudOperation\bin\PdfSharp.Charting-gdi.xml
+D:\Vyshakh_Project\StudentCrudOperation\bin\System.Web.Optimization.xml
+D:\Vyshakh_Project\StudentCrudOperation\bin\System.Web.Razor.xml
+D:\Vyshakh_Project\StudentCrudOperation\bin\System.Web.Webpages.xml
+D:\Vyshakh_Project\StudentCrudOperation\bin\System.Web.Webpages.Deployment.xml
+D:\Vyshakh_Project\StudentCrudOperation\bin\System.Web.Webpages.Razor.xml
+D:\Vyshakh_Project\StudentCrudOperation\bin\System.Web.Helpers.xml
+D:\Vyshakh_Project\StudentCrudOperation\bin\System.Web.Mvc.xml
+D:\Vyshakh_Project\StudentCrudOperation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Vyshakh_Project\StudentCrudOperation\bin\de\MigraDoc.DocumentObjectModel-gdi.resources.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\de\MigraDoc.Rendering-gdi.resources.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\de\MigraDoc.RtfRendering-gdi.resources.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\de\PdfSharp-gdi.resources.dll
+D:\Vyshakh_Project\StudentCrudOperation\bin\de\PdfSharp.Charting-gdi.resources.dll
+D:\Vyshakh_Project\StudentCrudOperation\obj\Debug\StudentGradingSystem.csproj.CoreCompileInputs.cache
+D:\Vyshakh_Project\StudentCrudOperation\obj\Debug\StudentGradingSystem.csproj.CopyComplete
+D:\Vyshakh_Project\StudentCrudOperation\obj\Debug\StudentCrudOperation.dll
+D:\Vyshakh_Project\StudentCrudOperation\obj\Debug\StudentCrudOperation.pdb
+D:\Vyshakh_Project\StudentCrudOperation\obj\Debug\StudentGradingSystem.csproj.AssemblyReference.cache
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\StudentCrudOperation.dll.config
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\StudentCrudOperation.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\StudentCrudOperation.pdb
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\roslyn\csc.exe
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\roslyn\csc.exe.config
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\roslyn\csc.rsp
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\roslyn\csi.exe
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\roslyn\csi.exe.config
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\roslyn\csi.rsp
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.AppContext.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Console.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.IO.Compression.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Net.Http.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Net.Sockets.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.ValueTuple.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Xml.XPath.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\roslyn\vbc.exe
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\roslyn\vbc.exe.config
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\roslyn\vbc.rsp
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\roslyn\VBCSCompiler.exe
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\Antlr3.Runtime.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\ArrayToPdf.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\MigraDoc.DocumentObjectModel-gdi.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\MigraDoc.Rendering-gdi.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\MigraDoc.RtfRendering-gdi.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\Newtonsoft.Json.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\PdfSharp-gdi.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\PdfSharp.Charting-gdi.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\System.Linq.Dynamic.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Helpers.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Mvc.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Optimization.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Razor.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Webpages.Deployment.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Webpages.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Webpages.Razor.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\WebGrease.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\Antlr3.Runtime.pdb
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\MigraDoc.DocumentObjectModel-gdi.xml
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\MigraDoc.Rendering-gdi.xml
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\MigraDoc.RtfRendering-gdi.xml
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\Newtonsoft.Json.xml
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\PdfSharp-gdi.xml
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\PdfSharp.Charting-gdi.xml
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Optimization.xml
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Razor.xml
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Webpages.xml
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Webpages.Deployment.xml
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Webpages.Razor.xml
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Helpers.xml
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Mvc.xml
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\de\MigraDoc.DocumentObjectModel-gdi.resources.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\de\MigraDoc.Rendering-gdi.resources.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\de\MigraDoc.RtfRendering-gdi.resources.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\de\PdfSharp-gdi.resources.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\bin\de\PdfSharp.Charting-gdi.resources.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\obj\Debug\StudentGradingSystem.csproj.CoreCompileInputs.cache
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\obj\Debug\StudentGradingSystem.csproj.CopyComplete
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\obj\Debug\StudentCrudOperation.dll
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\obj\Debug\StudentCrudOperation.pdb
+C:\Users\91623\Desktop\Vyshak\StudentGradeSystem\StudentCrudOperation\obj\Debug\StudentGradingSystem.csproj.AssemblyReference.cache
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\StudentCrudOperation.dll.config
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\StudentCrudOperation.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\StudentCrudOperation.pdb
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\csc.exe
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\csc.exe.config
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\csc.rsp
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\csi.exe
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\csi.exe.config
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\csi.rsp
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\Microsoft.Managed.Core.targets
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.AppContext.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Collections.Immutable.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Console.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Globalization.Calendars.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.IO.Compression.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.IO.FileSystem.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Net.Http.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Net.Sockets.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Reflection.Metadata.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.ValueTuple.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Xml.XmlDocument.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Xml.XPath.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\vbc.exe
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\vbc.exe.config
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\vbc.rsp
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\VBCSCompiler.exe
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\VBCSCompiler.exe.config
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\Antlr3.Runtime.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\ArrayToPdf.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\Microsoft.Web.Infrastructure.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\MigraDoc.DocumentObjectModel-gdi.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\MigraDoc.Rendering-gdi.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\MigraDoc.RtfRendering-gdi.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\Newtonsoft.Json.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\PdfSharp-gdi.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\PdfSharp.Charting-gdi.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\System.Linq.Dynamic.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Helpers.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Mvc.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Optimization.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Razor.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Webpages.Deployment.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Webpages.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Webpages.Razor.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\WebGrease.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\Antlr3.Runtime.pdb
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\MigraDoc.DocumentObjectModel-gdi.xml
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\MigraDoc.Rendering-gdi.xml
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\MigraDoc.RtfRendering-gdi.xml
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\Newtonsoft.Json.xml
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\PdfSharp-gdi.xml
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\PdfSharp.Charting-gdi.xml
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Optimization.xml
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Razor.xml
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Webpages.xml
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Webpages.Deployment.xml
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Webpages.Razor.xml
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Helpers.xml
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Mvc.xml
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\de\MigraDoc.DocumentObjectModel-gdi.resources.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\de\MigraDoc.Rendering-gdi.resources.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\de\MigraDoc.RtfRendering-gdi.resources.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\de\PdfSharp-gdi.resources.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\de\PdfSharp.Charting-gdi.resources.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\obj\Debug\StudentGradingSystem.csproj.CoreCompileInputs.cache
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\obj\Debug\StudentGradingSystem.csproj.CopyComplete
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\obj\Debug\StudentCrudOperation.dll
+D:\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\obj\Debug\StudentCrudOperation.pdb
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\StudentCrudOperation.dll.config
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\StudentCrudOperation.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\StudentCrudOperation.pdb
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\csc.exe
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\csc.exe.config
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\csc.rsp
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\csi.exe
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\csi.exe.config
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\csi.rsp
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.AppContext.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Console.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.IO.Compression.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Net.Http.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Net.Sockets.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.ValueTuple.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Xml.XPath.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\vbc.exe
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\vbc.exe.config
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\vbc.rsp
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\VBCSCompiler.exe
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\Antlr3.Runtime.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\ArrayToPdf.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\MigraDoc.DocumentObjectModel-gdi.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\MigraDoc.Rendering-gdi.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\MigraDoc.RtfRendering-gdi.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\Newtonsoft.Json.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\PdfSharp-gdi.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\PdfSharp.Charting-gdi.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\System.Linq.Dynamic.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Helpers.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Mvc.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Optimization.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Razor.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Webpages.Deployment.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Webpages.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Webpages.Razor.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\WebGrease.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\Antlr3.Runtime.pdb
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\MigraDoc.DocumentObjectModel-gdi.xml
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\MigraDoc.Rendering-gdi.xml
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\MigraDoc.RtfRendering-gdi.xml
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\Newtonsoft.Json.xml
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\PdfSharp-gdi.xml
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\PdfSharp.Charting-gdi.xml
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Optimization.xml
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Razor.xml
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Webpages.xml
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Webpages.Deployment.xml
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Webpages.Razor.xml
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Helpers.xml
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\System.Web.Mvc.xml
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\de\MigraDoc.DocumentObjectModel-gdi.resources.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\de\MigraDoc.Rendering-gdi.resources.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\de\MigraDoc.RtfRendering-gdi.resources.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\de\PdfSharp-gdi.resources.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\bin\de\PdfSharp.Charting-gdi.resources.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\obj\Debug\StudentGradingSystem.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\obj\Debug\StudentGradingSystem.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\obj\Debug\StudentGradingSystem.csproj.CopyComplete
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\obj\Debug\StudentCrudOperation.dll
+C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\obj\Debug\StudentCrudOperation.pdb
