@@ -9,7 +9,7 @@ using System.Web.Optimization;
         {
             StyleBundle myCssBundle = new StyleBundle("~/Content/MyCSS");
             myCssBundle.Include(
-                                 "~/Content/bootstrap.min.css", 
+                                 "~/Content/bootstrap.css",
                                  "~/Content/Site.css",
                                  "~/Style/StyleSheet.css",
                                  "~/Content/DataTables/css/jquery.dataTables.css",

@@ -125,12 +125,6 @@
     <None Include="Scripts\jquery-3.6.0.slim.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\StudentCrudOperation\StudentGradingSystem.csproj">
-      <Project>{679c5c67-82f2-41ec-aa58-d0c77903b492}</Project>
-      <Name>StudentGradingSystem</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Scripts\jquery-3.6.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.6.0.js" />
     <Content Include="Scripts\jquery-3.6.0.min.js" />

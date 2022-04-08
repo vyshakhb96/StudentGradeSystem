@@ -84,10 +84,12 @@
             <div class="form-group form-top" id="gradeDiv">
                 @Html.LabelFor(model => model.Grade, htmlAttributes: new { @class = "control-label col-md-4" })
                 <div class="space">
-                    @Html.EditorFor(model => model.Grade, new { htmlAttributes = new { @disabled = "disabled", @class = "form-control", @readonly = "readonly", @Id ="grade" } })
+                    @Html.EditorFor(model => model.Grade, new { htmlAttributes = new { @disabled = "disabled", @class = "form-control", @readonly = "readonly", @Id = "grade" } })
                     @Html.ValidationMessageFor(model => model.Grade, "", new { @class = "text-danger", @Id = "spanGrade", @style = "position:absolute" })
                 </div>
             </div>
+            @Html.HiddenFor(model => model.CreatedBy, htmlAttributes: new { @Id = "createdby" })
+            @Html.HiddenFor(model => model.CreatedDate, htmlAttributes: new { @Id = "modifiedby" })
         </div>
     </div>
     <div class="modal-footer">

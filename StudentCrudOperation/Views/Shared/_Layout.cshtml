@@ -8,23 +8,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STUDENT GRADING SYSTEM</title>
     @Styles.Render("~/Content/MyCSS")
-
 </head>
 <body class="scrolls">
-    <div class="navbar navbar-inverse navbar-static-top" style="background-color:black;">
-        <div class="container-fluid" style=" text-align:center">
 
-            <h3 style="color:floralwhite ">STUDENT GRADING SYSTEM</h3>
+    @*<div class="navbar navbar-inverse navbar-static-top" style="background-color:black;">
+            <div class="container-fluid" style=" text-align:center">
+                <div style="position: absolute; width: 95%; text-align: -webkit-right;">
+                    @if (Request.IsAuthenticated)
+                    {
+                    <h5 class="navbar">
+                        Signed in as @Html.Encode(User.Identity.Name.Split('@')[0]) <button type="button" class="dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-chevron-down"></span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="@Url.Action("Logout","Account")" style="cursor:pointer">Logout</a>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </h5>
 
+
+                    }
+                    else
+                    {
+
+                    }
+                </div>
+                <h3 style="color:floralwhite ">STUDENT GRADING SYSTEM</h3>
+
+
+            </div>
+
+        </div>*@
+    <nav class="navbar navbar-inverse navbar-static-top">
+        <div class="container">
+            <div>
+                @if (Request.IsAuthenticated)
+                {
+                    <div style="position: absolute;color:whitesmoke; text-align:-webkit-left;margin-top:1.5%">
+                        Signed in as @Html.Encode(User.Identity.Name.Split('@')[0])<button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split" style="justify-content:flex-end" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-chevron-down"></span>
+                        </button>
+                        <div class="dropdown-menu nav-dropdown">
+                            @if (HttpContext.Current.Request.Url.AbsolutePath == "/User/StudentView")
+                            {
+                            <a class="dropdown-item" href="/User/UserView" style="cursor:pointer">User Table</a>
+                            }
+                            else if (HttpContext.Current.Request.Url.AbsolutePath == "/User/UserView")
+                            {
+                            <a class="dropdown-item" href="/User/StudentView" style="cursor:pointer">Student Table</a>
+                            }
+                            else
+                            {
+
+                            }
+                            @*<a class="dropdown-item" onclick="ToPdf()" style="cursor:pointer">View / Export as Pdf</a>*@
+                            <div class="dropdown-divider">
+                            <a class="dropdown-item" href="/Account/Logout" style="cursor:pointer">Logout</a></div>
+                        </div>
+                    </div>
+                }
+               
+            </div>
+            <h3 class="col-sm-5" style="color:floralwhite;margin-left:35%;justify-content:center">STUDENT GRADING SYSTEM</h3>
+              
         </div>
-    </div>
-
+    </nav>
 
     <div class="container body-content">
+
+
         @RenderBody()
-       
+
         <div>
-          
+
             <footer class="footers">
                 <p>&copy; @DateTime.Now.Year - Student Grading Application</p>
             </footer>
@@ -34,6 +90,6 @@
 
 
     @Scripts.Render("~/Scripts/MyScript")
-
+    @RenderSection("scripts", required: false)
 </body>
 </html>

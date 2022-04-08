@@ -38,6 +38,12 @@ namespace StudentGradingSystem.Models
         public int Chemistry { get; set; }
 
         public string Grade { get; set; }
+        public int CreatedBy { get; set; }
+        public string CreatedByName { get; set; }
+        public string CreatedDate { get; set; }
+        public int ModifiedBy { get; set; }
+        public string ModifiedByName { get; set; }
+        public string ModifiedDate { get; set; }
 
         public int Active { get; set; }
 

@@ -127,3 +127,35 @@ div.container {
 .glyphicon-minus-sign {
     color: red;
 }
+.navbar {
+    background-color: black;
+}
+.btn-dark {
+    background-color: black;
+}
+.dropdown-menu{
+    border:solid;
+    border-color:black;
+    padding-left:20%;
+}
+.nav-dropdown {
+    margin-top: -12px;
+}
+.glyphicon-chevron-down{
+    font-size:small;
+}
+.dropdown-toggle{
+    height:37px;
+}
+li:nth-child(odd){
+    background-color:#333333;
+}
+li:nth-child(even) {
+    background-color: #222222;
+}
+.card{
+    justify-content:center;
+    align-items:center;
+    background:#fff;
+    box-shadow:initial;
+}

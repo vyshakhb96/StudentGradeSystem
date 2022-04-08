@@ -1,0 +1,214 @@
+﻿@model StudentCrudOperation.Models.User
+@using StudentLibraries.Enum;
+
+
+<form id="userDemo" name="userForm">
+
+    <div class="modal-header">
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span style="color:black" aria-hidden="true">&times;</span>
+        </button>
+
+        <h3 class="modal-title" style="display:flex; justify-content:center" id="ViewModalLabel">USER DETAILS</h3>
+
+
+    </div>
+    <div>
+        <div class="modal-body">
+            <span class="alert-danger">
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            </span>
+
+            @Html.HiddenFor(model => model.Id)
+            <div class="form-group form-top">
+                @Html.LabelFor(model => model.UserName, "User Name", htmlAttributes: new { @class = "control-label col-md-4" })
+                <div class="space">
+                    @Html.EditorFor(model => model.UserName, new { htmlAttributes = new { @class = "form-control", @onkeyup = "validateName()", @Id = "username",@placeholder="Username"} })
+                    @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger", @id = "spanUsername", @style = "position:absolute" })
+                </div>
+            </div>
+
+            <div class="form-group form-top">
+                @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-4" })
+                <div class="space">
+                    @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", @onkeyup = "validateEmail()", @Id = "email", @placeholder = "Email",@Value=Model.Email } })
+                    @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger", @Id = "spanEmail", @style = "position:absolute" })
+                </div>
+            </div>
+
+            <div class="form-group form-top">
+                @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-4" })
+                <div class="space">
+                    @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @type = "password", @class = "form-control", @onkeyup = "validatePassword()", @Id = "password", @Value = Model.Password, @placeholder = "Password" } })
+                    @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger", @Id = "spanPassword", @style = "position:absolute" })
+                </div>
+
+            </div>
+             <div class="form-group form-top" id="dateofbirth">
+                @Html.LabelFor(model => model.Dob, htmlAttributes: new { @class = "control-label col-md-4" })
+                <div class="space">
+                    @Html.EditorFor(model => model.Dob, new { htmlAttributes = new { @type = "date", @class = "form-control", @onkeyup = "validateDob()", @Id = "dob", @min = "1940-01-01", @max = "", } })
+                    @Html.ValidationMessageFor(model => model.Dob, "", new { @class = "text-danger", @Id = "spanDob", @style = "position:absolute" })
+                </div>
+
+            </div>
+            <div class="form-group form-top">
+                @Html.LabelFor(model => model.IsAdmin, "Admin", htmlAttributes: new { @class = "control-label col-md-4" })
+                <div class="space">
+                    @Html.EditorFor(model => model.IsAdmin, new { htmlAttributes = new { @type = "checkbox", @Id = "isAdmin" } })
+                    @Html.ValidationMessageFor(model => model.IsAdmin, "", new { @class = "text-danger", @Id = "spanAdmin", @style = "position:absolute" })
+                </div>
+
+            </div>
+            @Html.HiddenFor(model => model.Role, htmlAttributes: new { @Id = "role" })
+            @Html.HiddenFor(model => model.CreatedBy, htmlAttributes: new { @Id = "createdby" })
+            @Html.HiddenFor(model => model.CreatedDate, htmlAttributes: new { @Id = "modifiedby" })
+
+
+
+
+
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" id="btnEdit" style="width:12%;border:none" class="btn btn-warning" onclick="Enable()"> Edit </button>
+        <button type="button" id="btnSave" style="display: none;border:none" class="btn btn-success" onclick="AddUser()">Save</button>
+        <button type="button" id="btnUpdateSave" style="display:none;border:none" class="btn btn-success" onclick="UpdateUser()">Save</button>
+        <button type="button" style="border: none; margin-right: 25px;" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    </div>
+
+</form>
+
+<script>
+
+    function AddUser() {
+        var form = $('form[name="userForm"]');
+
+        var data = form.serialize();
+        validateEmail();
+        validateName();
+        validatePassword();
+        validateDob();
+
+        $.ajax({
+            type: "POST",
+            url: "/User/Create",
+            data: data,
+            success: function () {
+                $('#userTable').DataTable().ajax.reload(null, false);
+                $("#createModal").modal("hide");
+                toastr.options = {
+                    "closeButton": false,
+                    "newestOnTop": false,
+                    "positionClass": "toast-bottom-right",
+                    "preventDuplicates": false,
+                    "onclick": null,
+                    "showDuration": "100",
+                    "hideDuration": "500",
+                    "timeOut": "1500",
+                    "extendedTimeOut": "500",
+                    "showEasing": "swing",
+                    "hideEasing": "linear",
+                    "showMethod": "fadeIn",
+                    "hideMethod": "fadeOut"
+                }
+                toastr["success"]("User Added successfully!")
+            }
+        });
+    }
+
+    function UpdateUser() {
+        var form = $('form[name="userForm"]');
+        var data = form.serialize();
+        validateEmail();
+        validateName();
+        validatePassword();
+        validateDob();
+        $.post("/User/Edit", data, function (res) {
+            if (res) {
+
+                toastr.options = {
+                    "closeButton": true,
+                    "newestOnTop": false,
+                    "progressBar": true,
+                    "positionClass": "toast-bottom-right",
+                    "preventDuplicates": false,
+                    "onclick": null,
+                    "showDuration": "200",
+                    "hideDuration": "1000",
+                    "timeOut": "3000",
+                    "extendedTimeOut": "1000",
+                    "showEasing": "swing",
+                    "hideEasing": "linear",
+                    "showMethod": "fadeIn",
+                    "hideMethod": "fadeOut"
+                }
+                toastr["success"]("User updated successfully!")
+
+                $('#createModal').modal('hide');
+                $('#userTable').DataTable().ajax.reload();
+
+            }
+        })
+    }
+
+    function Enable() {
+        $('.form-control').attr('disabled', false);
+        $("#isAdmin").attr("disabled", false);
+        $("#email").attr("readonly", true);
+
+        btnEdit.style.visibility = 'hidden';
+        $("#btnUpdateSave").show();
+        document.getElementById("ViewModalLabel").innerHTML = "EDIT USER";
+    }
+
+    function validateEmail() {
+        var name = document.getElementById("email").value;
+        const specialChars = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        if (name == "") {
+            document.getElementById("spanEmail").textContent = "Email is required";
+        } else if (!$("#email").val().match(specialChars)) {
+            document.getElementById("spanEmail").textContent = "Enter proper Email";
+        }
+        else {
+            document.getElementById("spanEmail").textContent = "";
+        }
+    }
+    function validateDob() {
+        var dob = document.getElementById("dob").value;
+        //const specialChars = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        if (dob == "") {
+            document.getElementById("spanDob").textContent = "DOB is required";
+        }
+        else {
+            document.getElementById("spanDob").textContent = "";
+        }
+    }
+    function validatePassword() {
+        var password = document.getElementById("password").value;
+        //const specialChars = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        if (password == "") {
+            document.getElementById("spanPassword").textContent = "Password is required";
+        }
+        else {
+            document.getElementById("spanPassword").textContent = "";
+        }
+    }
+    function validateName() {
+        var username = document.getElementById("username").value;
+        const specialChars = /^[A-z a-z]+$/;
+        if (username == "") {
+            document.getElementById("spanUsername").textContent = "Username is required";
+            return false;
+        }
+        else if (username.length > 0) {
+            document.getElementById("spanUsername").textContent = "";
+        }
+        else {
+            document.getElementById("spanUsername").textContent = "";
+        }
+    }
+    
+</script>
+

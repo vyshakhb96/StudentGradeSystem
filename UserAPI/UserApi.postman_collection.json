@@ -1,0 +1,158 @@
+{
+	"info": {
+		"_postman_id": "313587ef-d921-49f5-bd83-f80dcf371067",
+		"name": "UserApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetAllUsers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44354/api/User/GetUsers?PageNumber=0&RowsInPage=10&SearchValue=a",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44354",
+					"path": [
+						"api",
+						"User",
+						"GetUsers"
+					],
+					"query": [
+						{
+							"key": "PageNumber",
+							"value": "0"
+						},
+						{
+							"key": "RowsInPage",
+							"value": "10"
+						},
+						{
+							"key": "SearchValue",
+							"value": "a"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44354/api/User/GetById?id=3009",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44354",
+					"path": [
+						"api",
+						"User",
+						"GetById"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3009"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44354/api/User/Delete?id=8",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44354",
+					"path": [
+						"api",
+						"User",
+						"Delete"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "8"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\":3009,\r\n    \"UserName\":\"oldUser\",\r\n    \"Email\":\"user@gmail.com\",\r\n    \"Password\":\"abcdefg\",\r\n    \"CreatedBy\": 2012,\r\n    \"CreatedDate\": \"02-04-2022 18:56:13\",\r\n    \"ModifiedBy\": 3009,\r\n    \"Dob\":\"null\",\r\n    \"IsAdmin\":true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44354/api/User/Edit",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44354",
+					"path": [
+						"api",
+						"User",
+						"Edit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"UserName\":\"New User\",\r\n    \"Email\":\"newuser2@gmail.com\",\r\n    \"Password\":\"abcdefg\",\r\n    \"Dob\":\"09/08/2000\",\r\n    \"IsAdmin\":true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44354/api/User/Create",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44354",
+					"path": [
+						"api",
+						"User",
+						"Create"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

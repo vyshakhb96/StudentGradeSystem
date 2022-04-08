@@ -8,22 +8,26 @@ using StudentGradingSystem.Models;
 using StudentGradingSystem.DAL;
 using System.Data;
 using ArrayToPdf;
+using System.Diagnostics;
+using StudentCrudOperation.Models;
+using StudentCrudOperation.DAL;
 
 namespace StudentGradingSystem.Controllers
 {
+    [Authorize]
     public class StudentController : Controller
     {
-
 
         // GET: Student
         public ActionResult Index()
         {
+            //ViewData["User"] = User.Identity.Name.Split('\\')[1];
             StudentDBHandle objDBHandle = new StudentDBHandle();
             ModelState.Clear();
             return View();
         }
 
-       
+
         private string GradeCalculation(int maths, int phy, int che)
         {
             float Total = maths + phy + che;
@@ -63,7 +67,6 @@ namespace StudentGradingSystem.Controllers
             }
 
         }
-
         [HttpPost]
         public ActionResult GetData()
         {
@@ -87,15 +90,12 @@ namespace StudentGradingSystem.Controllers
                     recordsFiltered = totalCount
                 }, JsonRequestBehavior.AllowGet);
             }
-            catch
+            catch (Exception ex)
             {
                 return View();
             }
         }
 
-
-
-        // GET: Student/Create
         [HttpGet]
         public ActionResult Create(string operation)
         {
@@ -124,7 +124,13 @@ namespace StudentGradingSystem.Controllers
                 {
                     if (ModelState.IsValid)
                     {
-                      
+                        UserDBHandle db = new UserDBHandle();
+                        string createdName = User.Identity.Name;
+                        User loggedUser = db.GetUserbyMail(createdName);
+                        objStudent.CreatedBy = loggedUser.Id;
+                        objStudent.CreatedDate = DateTime.Now.ToString();
+                        //objStudent.ModifiedBy = User.Identity.Name.Split('@')[0];
+                        //objStudent.ModifiedDate = DateTime.Now.ToString();
                         objStudent.Reqtype = "INSERT";
                         var success= objDBHandle.AddStudent(objStudent);
                         if (success)
@@ -181,7 +187,11 @@ namespace StudentGradingSystem.Controllers
         {
             try
             {
-               
+                UserDBHandle db = new UserDBHandle();
+                string createdName = User.Identity.Name;
+                User loggedUser = db.GetUserbyMail(createdName);
+                objStudent.ModifiedBy = loggedUser.Id;
+                objStudent.ModifiedDate = DateTime.Now.ToString();
                 if (ModelState.IsValid)
                 {
                     objStudent.Reqtype = "UPDATE";
@@ -240,7 +250,6 @@ namespace StudentGradingSystem.Controllers
             }
             return View();
         }
-
         [HttpGet]
         public ActionResult Print()
         {
@@ -262,7 +271,7 @@ namespace StudentGradingSystem.Controllers
                 table.Rows.Add(booking.Regnum, booking.Name, booking.Dob, booking.Standard, booking.Mathematics, booking.Physics, booking.Chemistry, booking.Grade);
 
             var pdf = table.ToPdf();
-            System.IO.File.WriteAllBytes(@"C:/Users/91623/Desktop/Vyshak/StudentGradeSystem/StudentCrudOperation/PreviewPdf/result.pdf", pdf);
+            System.IO.File.WriteAllBytes(@"C:\Users\user\Desktop\New folder\Vyshakh\StudentGradeSystem\StudentCrudOperation\PreviewPdf\result.pdf", pdf);
             return PartialView("_PrintPage");
 
         }

@@ -1,0 +1,188 @@
+﻿<div class="modal fade" id="createModal" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content" id="userModalBody">
+
+        </div>
+    </div>
+</div>
+<br />
+<div style="float:left;">
+    <button type="button" style="height: 37px; border: none; margin-right: 5%;" class="btn btn-primary" onclick="createUser()">Register User</button>
+</div>
+<table id="userTable" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+    <thead style="background-color: #1C2833; color: white">
+        <tr>
+            <th></th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Role</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+</table>
+@section scripts{
+    <script>
+    function format(d) {
+        return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">' +
+            '<tr>' +
+            '<td>Created By:</td>' +
+            '<td>' + d.CreatedByName + '</td>' +
+            '</tr>' +
+            '<tr>' +
+            '<td>Created Date:</td>' +
+            '<td>' + d.CreatedDate + '</td>' +
+            '</tr>' +
+            '<tr>' +
+            '<td>Modified By:</td>' +
+            '<td>' + d.ModifiedByName+'</td>' +
+            '</tr>' +
+            '<td>Modified Date:</td>' +
+            '<td>' + d.ModifiedDate + '</td>'
+            '</table>';
+    }
+    var userdataTable;
+    $(document).ready(function () {
+        userdataTable = $('#userTable').DataTable({
+            "ajax": {
+                url: "/User/GetUsers",
+                type: "POST",
+                dataType: "json",
+
+            },
+            columns: [
+                {
+                    "data": null,
+                    "width": "3%",
+                    "defaultContent": '',
+                },
+                { 'data': 'UserName', 'name': "UserName" },
+                { 'data': 'Email', 'name': "Email" },
+                { 'data': 'Role', 'name': "Role" },
+                {
+                    'data': 'Id', 'render': function (data) {
+                        return '<a class="blue" title="View" onclick="getUser(' + data + ')" > <span class="glyphicon glyphicon-eye-open"></span></a> <a class="orenge" title="Edit" onclick="editUser(' + data + ')" > <span class="glyphicon glyphicon-edit"></span></a>  <a class="red" title="Delete"  onclick="Delete(' + data + ')"> <span class="glyphicon glyphicon-trash"></span></a>';
+                    }
+                }
+            ],
+
+            "serverSide": true,
+            "order": [1, "asc"],
+            "scrollY": "370px",
+            "scrollCollapse": false,
+            "processing": true,
+            "dom": '<"top"f>rt<"bottom"ilp><"clear">',
+
+            responsive: {
+                details: {
+                    type: 'column',
+                    target: 'tr'
+                }
+            },
+            "columnDefs": [
+                {
+
+                    className: 'dt-control dtr-control',
+                    orderable: false,
+                    targets: 0,
+                },
+                {
+                    'targets': [0],
+                    'orderable': false,
+                },
+
+
+
+            ],
+
+        });
+        $('#userTable tbody').on('click', 'td.dt-control', function () {
+            var tr = $(this).closest('tr');
+            var row = userdataTable.row(tr);
+
+            if (row.child.isShown()) {
+                row.child.hide();
+                tr.removeClass('shown');
+            }
+            else {
+                row.child(format(row.data())).show();
+                tr.addClass('shown');
+            }
+        });
+    });
+
+
+    function createUser() {
+        $.get("/User/Create", { operation: "Add" }, function (res) {
+            $('#userModalBody').html(res);
+
+            document.getElementById("ViewModalLabel").innerHTML = "CREATE USER"
+            $(".form-control").attr("disabled", false);
+            $(".email").attr("disabled", false);
+            $("#isAdmin").attr("disabled", false);
+            dob();
+
+            $("#btnSave").show();
+            $("#btnEdit").hide();
+            $('#createModal').modal('show');
+            btnEdit.style.visibility = 'hidden';
+        })
+        }
+        function dob() {
+
+        var today = '@DateTime.Today.ToString("MM/dd/yyyy")';
+
+        var date = new Date();
+        var year = date.getFullYear();
+        var dayBeforeDate = date.setFullYear(year - 17);
+        var requiredDate = new Date(dayBeforeDate).toISOString().slice(0, 10);
+
+        $('#dob').attr('max', requiredDate);
+    }
+    function getUser(id) {
+        $.get("/User/Edit", { operation: "View", id: id }, function (res) {
+            $('#userModalBody').html(res);
+            if ($('#role').val() == "Admin") {
+                $('#isAdmin').prop('checked', true);
+            }
+            else {
+                $('#isAdmin').prop('checked', false);
+            }
+            $("#dateofbirth").hide();
+
+            $(".form-control").attr("disabled", true);
+            $("#isAdmin").attr("disabled", true);
+            $('#createModal').modal('show');
+        })
+    }
+    function editUser(id) {
+        $.get("/User/Edit", { operation: "Edit", id: id }, function (res) {
+            $('#userModalBody').html(res);
+            if ($('#role').val() == "Admin") {
+                $('#isAdmin').prop('checked', true);
+            }
+            else {
+                $('#isAdmin').prop('checked', false);
+            }
+            $("#dateofbirth").hide();
+            $("#btnUpdateSave").show();
+            btnEdit.style.visibility = 'hidden';
+
+            document.getElementById("ViewModalLabel").innerHTML = "EDIT USER";
+            $('#createModal').modal('show');
+            $("#email").attr("readonly", true);
+
+        })
+    }
+    function Delete(id) {
+        $.get("/User/Delete", { id: id }, function (res) {
+            if (res) {
+                $('#userModalBody').html(res);
+                $('#createModal').modal('show');
+                dataTable.ajax.reload();
+            }
+        })
+    }
+
+    </script>
+} 
+

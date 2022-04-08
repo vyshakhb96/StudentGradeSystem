@@ -1,4 +1,5 @@
-﻿using StudentGradingSystem.Models;
+﻿using StudentCrudOperation.DAL;
+using StudentGradingSystem.Models;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -48,7 +49,11 @@ namespace StudentGradingSystem.DAL
             cmd.Parameters.AddWithValue("@Physics", smodel.Physics);
             cmd.Parameters.AddWithValue("@Chemistry", smodel.Chemistry);
             cmd.Parameters.AddWithValue("@Grade", smodel.Grade);
-            cmd.Parameters.AddWithValue("@Active", 1);
+                cmd.Parameters.AddWithValue("@CreatedBy", smodel.CreatedBy);
+                cmd.Parameters.AddWithValue("@CreatedDate", smodel.CreatedDate);
+                cmd.Parameters.AddWithValue("@ModifiedBy", smodel.ModifiedBy);
+                cmd.Parameters.AddWithValue("@ModifiedDate", smodel.ModifiedDate);
+                cmd.Parameters.AddWithValue("@Active", 1);
             cmd.Parameters.AddWithValue("@Reqtype", smodel.Reqtype);
 
             OpenConnection();
@@ -150,12 +155,18 @@ namespace StudentGradingSystem.DAL
             student.Physics = Convert.ToInt32(dt.Rows[0]["Physics"]);
             student.Chemistry = Convert.ToInt32(dt.Rows[0]["Chemistry"]);
             student.Grade = Convert.ToString(dt.Rows[0]["Grade"]);
+            student.CreatedBy = Convert.ToInt32(dt.Rows[0]["CreatedBy"]);
+            student.CreatedDate = Convert.ToString(dt.Rows[0]["CreatedDate"]);
+            student.ModifiedBy = Convert.ToInt32(dt.Rows[0]["ModifiedBy"]);
+            student.ModifiedDate = Convert.ToString(dt.Rows[0]["ModifiedDate"]);
+
 
             return student;
         }
 
         public List<Student> GetStudent(int offsetValue, int PagingSize, string search)
         {
+
             connection();
             List<Student> studentlist = new List<Student>();
 
@@ -185,8 +196,34 @@ namespace StudentGradingSystem.DAL
                         Physics = Convert.ToInt32(dr["Physics"]),
                         Chemistry = Convert.ToInt32(dr["Chemistry"]),
                         Grade = Convert.ToString(dr["Grade"]),
-                       
+                        CreatedBy = Convert.ToInt32(dr["CreatedBy"]),
+                        CreatedDate = Convert.ToString(dr["CreatedDate"]),
+                        ModifiedBy = Convert.ToInt32(dr["ModifiedBy"]),
+                        ModifiedDate = Convert.ToString(dr["ModifiedDate"]),
+
                     });
+            }
+            foreach (var n in studentlist)
+            {
+                UserDBHandle db = new UserDBHandle();
+                if (n.CreatedBy > 0)
+                {
+                    var user = db.GetUserById(n.CreatedBy);
+                    n.CreatedByName = user.Email.Split('@')[0];
+                }
+                else
+                {
+                    n.CreatedByName = "Admin";
+                }
+                if (n.ModifiedBy > 0)
+                {
+                    var user = db.GetUserById(n.ModifiedBy);
+                    n.ModifiedByName = user.Email.Split('@')[0];
+                }
+                else
+                {
+                    n.ModifiedByName = "Not modified yet";
+                }
             }
             return studentlist;
         }
@@ -209,6 +246,10 @@ namespace StudentGradingSystem.DAL
                 cmd.Parameters.AddWithValue("@Physics", smodel.Physics);
                 cmd.Parameters.AddWithValue("@Chemistry", smodel.Chemistry);
                 cmd.Parameters.AddWithValue("@Grade", smodel.Grade);
+                cmd.Parameters.AddWithValue("@CreatedBy", smodel.CreatedBy);
+                cmd.Parameters.AddWithValue("@CreatedDate", smodel.CreatedDate);
+                cmd.Parameters.AddWithValue("@ModifiedBy", smodel.ModifiedBy);
+                cmd.Parameters.AddWithValue("@ModifiedDate", smodel.ModifiedDate);
                 cmd.Parameters.AddWithValue("@Active", 1);
                 cmd.Parameters.AddWithValue("@Reqtype", smodel.Reqtype);
 
